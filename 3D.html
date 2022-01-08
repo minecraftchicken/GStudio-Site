@@ -1,0 +1,264 @@
+<html data-theme="light">
+
+<head>
+    <title>3D Renders — Grabster</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                </div>
+            </a>
+
+            <div class="slide-navlist-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+        <div class="page-title-container">
+            <h1 class="page-title">
+
+                <svg id="page-icon" width="100" height="70" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 44H56V100H0V44ZM10 54V90H46V54H10Z"
+                            fill="#FF6738" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 22H78V78H22V22ZM32 32V68H68V32H32Z"
+                            id="page-icon-white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M46 0H100V54H46V0ZM56 10V44H90V10H56Z"
+                            fill="#FF6738" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="100" height="100" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                3D Renders
+            </h1>
+            <p class="page-description">Learning to express my imaginations through a new medium of art.
+            </p>
+        </div>
+
+        <div class="items-container">
+            <div class="item-type-compact hd">
+
+                <a href="images/projects/3d/stairs-to-nowhere-HD-by-Grabstertv.png" target="_blank" id="HD">
+                    <!-- HD LABEL ICON-->
+                    <svg id="hd-label" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
+                            fill="white" />
+                        <path d="M9.5 15H11V9H9.5V11.5H7.5V9H6V15H7.5V13H9.5V15Z" fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 9H17C17.55 9 18 9.45 18 10V14C18 14.55 17.55 15 17 15H13V9ZM14.5 13.5H16.5V10.5H14.5V13.5Z"
+                            fill="black" />
+                    </svg>
+                    <img class="item-image long-preview" id="colored-hover"
+                        src="images/projects/3d/stairs-to-nowhere-by-Grabstertv.png" alt="">
+                </a>
+                <p>Experiment</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Stairs to Nowhere</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact hd">
+
+                <a href="images/projects/3d/memphis-one-HD-by-grabstertv.png" target="_blank" id="HD">
+
+                    <!-- HD LABEL ICON-->
+                    <svg id="hd-label" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
+                            fill="white" />
+                        <path d="M9.5 15H11V9H9.5V11.5H7.5V9H6V15H7.5V13H9.5V15Z" fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 9H17C17.55 9 18 9.45 18 10V14C18 14.55 17.55 15 17 15H13V9ZM14.5 13.5H16.5V10.5H14.5V13.5Z"
+                            fill="black" />
+                    </svg>
+                    <img
+                        class="item-image long-preview" id="colored-hover"
+                        src="images/projects/3d/memphis-one-by-grabstertv.png" alt=""></a>
+                <p>Wallpaper — Downloadable</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Memphis One</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <a href="images/projects/3d/valley-HD-by-Grabstertv.png" target="_blank"><img
+                        class="item-image long-preview" src="images/projects/3d/valley-by-Grabstertv.png" alt=""></a>
+                <p>Experiment</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Valley</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact hd">
+
+                <a href="images/projects/3d/poopcowboy-emoji-by-grabstertv.png" target="_blank" id="HD">
+
+                    <!-- HD LABEL ICON-->
+                    <svg id="hd-label" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z"
+                            fill="white" />
+                        <path d="M9.5 15H11V9H9.5V11.5H7.5V9H6V15H7.5V13H9.5V15Z" fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 9H17C17.55 9 18 9.45 18 10V14C18 14.55 17.55 15 17 15H13V9ZM14.5 13.5H16.5V10.5H14.5V13.5Z"
+                            fill="black" />
+                    </svg>
+                    <img
+                        class="item-image long-preview" src="images/projects/3d/fluent-poop-by-grabstertv.png"
+                        alt=""></a>
+                <p>Fan Art — Downloadable</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">MS-Fluent Poop Emoji</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <a href="images/projects/3d/an-eerie-hallway-by-grabstertv.png" target="_blank"><img
+                        class="item-image long-preview" src="images/projects/3d/an-eerie-hallway-HD-by-grabstertv.png"
+                        alt=""></a>
+                <p>Experiment</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">An Eerie Hallway</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <a href="images/projects/3d/slate.png" target="_blank"><img class="item-image long-preview"
+                        src="images/projects/3d/slate.png" alt=""></a>
+                <p>Experiment</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Slate</a></h2>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li>
+                        <!-- Sidebar close button -->
+                        <i onclick="sideBar();backgroundDim()" class="mdi mdi-close" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="index.html">
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-Home-Variant-Outline"></i></li>
+                    </a>
+                    <a href="apps.html">
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
+                    </a>
+                    <a href="store.html">
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-Storefront-Outline"></i></li>
+                    </a>
+                    <a href="about.html">
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
+                    </a>
+                    <a href="AVETC.html">
+                        <li>Theme Contest<i id="sidebar-icon" class="mdi mdi-Trophy-Outline"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Designed & coded with stress & love by Grabster.</p>
+        <div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="mdi mdi-twitter social-icons twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="mdi mdi-youtube social-icons youtube"></i>
+            </a>
+
+            <a href="https://invite.gg/Grabster" target="_blank">
+                <i class="mdi mdi-discord social-icons discord"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

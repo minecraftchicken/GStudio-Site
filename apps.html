@@ -1,0 +1,684 @@
+<html data-theme="light">
+
+<head>
+    <title>Apps — Grabster</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/apps.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                </div>
+            </a>
+
+            <div class="slide-navlist-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+
+        <!-- Section 1 -->
+
+        <div class="page-title-container">
+            <h1 class="page-title">
+
+                <svg id="page-icon" height="68" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.000488281" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect y="22.7603" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect y="45.5203" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="22.7601" y="0.000488281" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="22.7601" y="22.7603" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="22.7601" y="45.5203" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="45.5201" y="0.000488281" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="45.5201" y="22.7603" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="45.5201" y="45.5203" width="14.4793" height="14.4793" id="page-icon-white" />
+                </svg>
+
+                Apps & Themes
+            </h1>
+            <p class="page-description">Homescreens are boring and dumb. My goal is to eliminate the boring<br>
+                and make them do more for everyone.
+            </p>
+        </div>
+
+        <div class="items-container">
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Gradjent.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                    <p>Wallpapers</p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Gradjent</h2>
+                </span>
+                <h3 id="long-desc">Bring everything you need right to your homescreen!
+                    Gradjent is a highly customizable preset that focuses on productivity.
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://play.google.com/store/apps/details?id=gradjentunlocked.grabsterstudios.pack"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://play.google.com/store/apps/details?id=gradjent.grabsterstudios.pack"
+                        target="_blank"><button class="button-outline-cta">Free Try</button></a>
+                    <a href="https://youtu.be/nMI3I8EUkxM" target="_blank"><button
+                            class="button-outline-cta">Trailer</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Dashcards.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                    <p><a href="https://play.google.com/store/apps/details?id=org.kustom.widget&hl=en&gl=US"
+                            target="_blank">KWGT</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">DashCards</h2>
+                </span>
+                <h3 id="long-desc">DashCards is one of a kind, multi preset pack that brings note-taking right to your
+                    home screen with its
+                    free Companion app.</h3>
+
+                <div class="buttons-container">
+                    <a href="https://play.google.com/store/apps/details?id=dashcards.grabsterstudios"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://youtu.be/BbHxByOpTzE" target="_blank"><button class="button-outline-cta">Watch
+                            Trailer</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Minimus.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Minimus</h2>
+                </span>
+                <h3 id="long-desc">The darkest KLWP preset with OLEDbuddy score of 97.7%. Minimus comes with 2,
+                    versatile presets
+                    that are highly customizable and is completely free to use.
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://play.google.com/store/apps/details?id=minimus.grabsterstudios.pack"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://youtu.be/lJ64kMvcqgA" target="_blank"><button class="button-outline-cta">Watch
+                            Trailer</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Reev Pro.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.widget&hl=en&gl=US"
+                            target="_blank">KWGT</a></p>
+                    <p>Icon Pack</p>
+                    <p>Wallpapers</p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Reev Pro</h2>
+                </span>
+                <h3 id="long-desc">Minimalist outline based icon pack for Android with over 1,300 icons, 100+ wallpapers
+                    and 30 KWGT widgets. Reev Pro is updated every week with new content.</h3>
+
+                <div class="buttons-container">
+                    <a href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.reevicons.grabsterstudios"
+                        target="_blank"><button class="button-outline-cta">Try for free</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/reev-dark.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype">Icon Pack</p>
+                    <p>Wallpapers</p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Reev Dark</h2>
+                </span>
+                <h3 id="long-desc">The icon pack you know and love, now in black and more exclusive wallpapers to fulfill your customization desires!</h3>
+
+                <div class="buttons-container">
+                    <a href="https://play.google.com/store/apps/details?id=com.reevdark.grabsterstudios"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://youtu.be/gZFgDUUUlgI"
+                        target="_blank"><button class="button-outline-cta">Watch Trailer</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Dashnotes.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype">Companion for DashCards</p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">DashNotes</h2>
+                </span>
+                <h3 id="long-desc">A standalone app created in Tasker, is a local note-taking app that makes
+                    note-taking with Kustom apps a
+                    seamless experience.
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://drive.google.com/uc?export=download&id=19t0vB2I7lpPoMpsioCx3bF7e1NuAfR0v"
+                        target="_blank"><button class="button-fill-cta">Download APK</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+
+        <div class="page-title-container section-2">
+            <h1 class="page-title">
+
+                <svg id="page-icon" height="68" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.000488281" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect y="22.7603" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect y="45.5203" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="22.7601" y="0.000488281" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="22.7601" y="22.7603" width="14.4793" height="14.4793" id="page-icon-white" />
+                    <rect x="22.7601" y="45.5203" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="45.5201" y="0.000488281" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="45.5201" y="22.7603" width="14.4793" height="14.4793" fill="#FF6738" />
+                    <rect x="45.5201" y="45.5203" width="14.4793" height="14.4793" fill="#FF6738" />
+                </svg>
+                Other Projects
+            </h1>
+            <p class="page-description">Theme projects made for contests, charities, tributes etc.</p>
+        </div>
+
+        <div class="items-container">
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Memento Mori.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Memento Mori</h2>
+                </span>
+                <h3 id="long-desc">In tribute to Unus Annus , I designed a minimalist theme that counts down to 1 year.
+                    You can set your own custom time through a global.</h3>
+
+                <div class="buttons-container">
+                    <a href="https://drive.google.com/file/d/16F5AXYO8mU53Ucq-tQtISDdbW1B52nSg/view?usp=sharing"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/ju1hr2/theme_momento_mori/" target="_blank"><button class="button-outline-cta">See Preview</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Everyday.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Everyday</h2>
+                </span>
+                <h3 id="long-desc">A unique concept theme I designed for a monthly r/AndroidThemes contest. Featuring a
+                    very early version of my icon pack Reev Pro.</h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/u/0/uc?id=1-8zTDjiPROW3RyPHuUlgtk2fiA0kc1yq&export=download"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/c0prry/contest_everyday/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div> 
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Oneui2.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">OneUI 2.0</h2>
+                </span>
+                <h3 id="long-desc">Back when OneUI 2 was not even released, I created a simple multi-page KLWP preset
+                    for
+                    easy access to apps without making any clutter.</h3>
+
+                <div class="buttons-container">
+                    <a href="https://drive.google.com/u/0/uc?id=1b6Rg9eZvGXoBY_5or7yD4mswonExT3B5&export=download"
+                        target="_blank"><button class="button-fill-cta">Download</button></a>
+                    <a href="https://www.youtube.com/watch?v=NqvrOvCf3h8&t" target="_blank"><button
+                            class="button-outline-cta">Watch Trailer</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/big-picture.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Big Picture</h2>
+                </span>
+                <h3 id="long-desc">Become a true Gamer by bringing Steam's big picture mode to your android home screen.
+                    Customize it to you own liking with tons of globals for you to play with.
+                    <p id="winner-text">Winner of <u><a href="https://reddit.com/r/androidthemes">r/AndroidThemes'</a></u> Aug
+                        2020 contest.</p>
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://drive.google.com/file/d/1pwgsng6-58kHJ21MS34-8J-q7NEXx2Tj/view?usp=sharing"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+
+                        <a href="https://www.reddit.com/r/androidthemes/comments/iaahk2/contest_big_picture/"
+                            target="_blank"><button class="button-outline-cta">
+                                See Preview
+                            </button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Another Dream.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Another Dream</h2>
+                </span>
+                <h3 id="long-desc">A theme based on the vaporwave music aesthetic. The theme also has a glitchy
+                    background and Windows 95 style music player for the ultimate nostalgia.
+                    <p id="winner-text">Winner of <u><a href="https://reddit.com/r/androidthemes">r/AndroidThemes'</a></u> Feb
+                        2021 contest.</p>
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://drive.google.com/uc?export=download&id=1TsPxLSvCLPRABiwjjba5_x5H8zIEZmhi"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+
+                        <a href="https://www.reddit.com/r/androidthemes/comments/lbpl0p/contest_another_dream_play_with_sound/"
+                            target="_blank"><button class="button-outline-cta">
+                                See Preview
+                            </button>
+                        </a>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/themes4australia.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Themes For Australia</h2>
+                </span>
+                <h3 id="long-desc">An initative, created by myself & <u><a href="https://twitter.com/mhcharlee"
+                            target="_blank">Charlee Designs</a></u> to raise funds & awareness for
+                    the Australian wildfires. Donators received themes from 6 creators. With the help of the
+                    small theming community, we raised over $600!</h3>
+
+                <div class="buttons-container">
+                    <a href="https://www.reddit.com/r/androidthemes/comments/ep4zf5/theme_themesforaustralia/"
+                        target="_blank"><button class="button-fill-cta">See Preview</button></a>
+                </div>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/shiver.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Shiver</h2>
+                </span>
+                <h3 id="long-desc">A 2-page horror theme with an animated skull that greets you with its red glowing
+                    eyes when you play music. It also has a minimalist horror style analog clock.</h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/uc?export=download&id=1-bwKNxW4K3QT39UGuM56PZVQ2rMJE6rb"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/jdefjn/contest_shiver_play_with_sound/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/contra.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Contra</h2>
+                </span>
+                <h3 id="long-desc">Contra is a 3-page pixel-art theme based on the popular NES video-game called Contra.
+                    From background to foreground, the theme is full of animations with a parallax effect.
+                </h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/uc?export=download&id=1D_VbO_kzYu6XhWjrst_NS61P45aPSIb8"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/p39cqc/contest_contra_for_kustom/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/zune-again.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Zune Again</h2>
+                </span>
+                <h3 id="long-desc">Zune Again is a simple, 2-page Zune/Windows Phone UI inspired theme with simple customizations through globals and interactive music player.
+                </h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/uc?export=download&id=1OV7BuJp15CoHQfAgHq0OH4H7jcjlrX0m"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/pkcjx7/contest_zune_again/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/Ubuntu-shamrock.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Ubuntu Shamrock</h2>
+                </span>
+                <h3 id="long-desc">Ubuntu inspired desktop-like theme with togglable windows, calendar, music player and easily to customize globals.
+                </h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/uc?export=download&id=1m5pyNo5J8w5_9tbHuUYXok4iGSwMMdZp"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+                    <a href="https://www.reddit.com/r/androidthemes/comments/oezn48/contest_ubuntu_shamrock/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/bllock-ratio.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                    <p id="first-apptype"><a
+                            href="https://invite.gg/grabster"
+                            target="_blank">DISCORD EXCLUSIVE</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Bllock Ratio</h2>
+                </span>
+                <h3 id="long-desc">A recreation of the Android launcher by the same name "Bllock Ratio" made entirely in KLWP with DashCards Companion integration for offline note-taking.
+                </h3>
+
+                <div class="buttons-container">
+                    <a href="https://twitter.com/GrabsterTV/status/1270762708078559237"
+                        target="_blank"><button class="button-fill-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image" src="images/apps/welcome-back-to-vice-city.jpg" alt="">
+                <div class="app-type">
+                    <p id="first-apptype"><a
+                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                            target="_blank">KLWP</a></p>
+                </div>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Welcome Back to Vice City</h2>
+                </span>
+                <h3 id="long-desc">Take a trip back to Vice City with this KLWP preset. Made for Nigara launcher, but you can use it with traditional launchers as well by simply moving a toggle in globals.
+                </h3>
+
+                <div class="buttons-container">
+
+                    <a href="https://drive.google.com/uc?export=download&id=1-ruW2pAcAUZeSQadDvXk5MSmEkAwCbfk"
+                        target="_blank">
+                        <button class="button-fill-cta">
+                            Download
+                        </button>
+                    </a>
+
+                    <a href="https://www.reddit.com/r/androidthemes/comments/mfofhu/theme_welcome_back_to_vice_city/"
+                        target="_blank"><button class="button-outline-cta">
+                            See Preview
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 3 - Theme Contest -->
+        <div class="page-title-container">
+            <h1 class="page-title">
+
+                <svg id="page-icon" height="68" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M54.0741 13.3333H48.1481V7.40735H60V16.8899C60 23.1321 54.2235 27.4073 48.1481 27.4073V21.4814C51.8912 21.4814 54.0741 18.9921 54.0741 16.8899V13.3333Z"
+                        id="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.92594 13.3333H11.8519V7.40735H1.62125e-05V16.8899C1.62125e-05 23.1321 5.77649 27.4073 11.8519 27.4073V21.4814C8.10885 21.4814 5.92594 18.9921 5.92594 16.8899V13.3333Z"
+                        id="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.4612 45.1852H44.5388V54.8148H51.8518V60.7407H8.14813V54.8148H15.4612V45.1852ZM21.3871 54.8148H38.6128V51.1111H21.3871V54.8148Z"
+                        id="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.88892 0H51.1111V18.8549C51.1111 29.6087 43.2489 38.5632 32.963 40.0237V51.1111H27.0371V40.0237C16.7512 38.5632 8.88892 29.6087 8.88892 18.8549V0ZM14.8148 5.92593V18.8549C14.8148 27.4293 21.654 34.3063 30 34.3063C38.346 34.3063 45.1852 27.4293 45.1852 18.8549V5.92593H14.8148Z"
+                        fill="#FF6738" />
+                </svg>
+
+
+                Theming Contest
+            </h1>
+            <p class="page-description">Participate in a monthly theming contest and win big prizes! <u><a
+                        href="AVETC.html">Click here for more info.</a></u>
+            </p>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li>
+                        <!-- Sidebar close button -->
+                        <i onclick="sideBar();backgroundDim()" class="mdi mdi-close" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="index.html">
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-Home-Variant-Outline"></i></li>
+                    </a>
+                    <a href="apps.html">
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
+                    </a>
+                    <a href="store.html">
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-Storefront-Outline"></i></li>
+                    </a>
+                    <a href="about.html">
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
+                    </a>
+                    <a href="AVETC.html">
+                        <li>Theme Contest<i id="sidebar-icon" class="mdi mdi-Trophy-Outline"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Designed & coded with stress & love by Grabster.</p>
+        <div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="mdi mdi-twitter social-icons twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="mdi mdi-youtube social-icons youtube"></i>
+            </a>
+
+            <a href="https://invite.gg/Grabster" target="_blank">
+                <i class="mdi mdi-discord social-icons discord"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

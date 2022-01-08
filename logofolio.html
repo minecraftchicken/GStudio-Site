@@ -1,0 +1,256 @@
+<html data-theme="light">
+
+<head>
+    <title>Logofolio — Grabster</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="images/logo-vector.svg" alt="Grabster Logo">
+                </div>
+            </a>
+
+            <div class="slide-navlist-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="AVETC.html">Theme Contest</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+        <div class="page-title-container">
+            <h1 class="page-title">
+                <svg id="page-icon" height="68" viewBox="0 0 90 90" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path id="page-icon-white" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M90 0H0V90H90V0ZM45 29.0625C36.198 29.0625 29.0625 36.198 29.0625 45C29.0625 53.802 36.198 60.9375 45 60.9375C53.802 60.9375 60.9375 53.802 60.9375 45C60.9375 36.198 53.802 29.0625 45 29.0625Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M26.9355 17C21.4483 17 17 21.4483 17 26.9355V63.0645C17 68.5517 21.4483 73 26.9355 73H63.0645C68.5517 73 73 68.5517 73 63.0645V26.9355C73 21.4483 68.5517 17 63.0645 17H26.9355ZM45 29.6452C36.5198 29.6452 29.6452 36.5198 29.6452 45C29.6452 53.4802 36.5198 60.3548 45 60.3548C53.4802 60.3548 60.3548 53.4802 60.3548 45C60.3548 36.5198 53.4802 29.6452 45 29.6452Z"
+                        fill="#FF6738" />
+                </svg>
+
+
+                Logofolio
+            </h1>
+            <p class="page-description">Here you will find all logos I've designed. Some concept designs are
+                <br>available for purchase. Contact me for details.
+            </p>
+        </div>
+
+        <div class="items-container">
+            <div class="item-type-compact">
+                <img class="item-image invertable" id="colored-hover" src="images/projects/logofolio/logo-1.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">RoboticMod</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-2.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">AR.E</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-3.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Luxury Apperal International</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-4.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Resay Dota</a></h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-8.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">EM4V</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-9.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">GeoPhoto</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-10.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Diarium</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-11.jpg" alt="">
+                <p>Commission</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Strix Music</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-5.jpg" alt="">
+                <p>Concept — For Sale</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Bolt H</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-6.jpg" alt="">
+                <p>Concept — For Sale</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Fast F</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-12.jpg" alt="">
+                <p>Personal Project</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Reev Pro</h2>
+                </span>
+            </div>
+
+            <div class="item-type-compact">
+                <img class="item-image invertable" src="images/projects/logofolio/logo-13.jpg" alt="">
+                <p>Personal Project</p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">DashCards</h2>
+                </span>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li>
+                        <!-- Sidebar close button -->
+                        <i onclick="sideBar();backgroundDim()" class="mdi mdi-close" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="#">
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-Home-Variant-Outline"></i></li>
+                    </a>
+                    <a href="apps.html">
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
+                    </a>
+                    <a href="store.html">
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-Storefront-Outline"></i></li>
+                    </a>
+                    <a href="about.html">
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
+                    </a>
+                    <a href="AVETC.html">
+                        <li>Theme Contest<i id="sidebar-icon" class="mdi mdi-Trophy-Outline"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Designed & coded with stress & love by Grabster.</p>
+        <div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="mdi mdi-twitter social-icons twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="mdi mdi-youtube social-icons youtube"></i>
+            </a>
+
+            <a href="https://invite.gg/Grabster" target="_blank">
+                <i class="mdi mdi-discord social-icons discord"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

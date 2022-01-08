@@ -1,0 +1,311 @@
+<html data-theme="light">
+
+<head>
+    <title>AVETC — Grabster</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/grabster-studios-logo_fav.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/AVETC.css" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- REQUIRE EDITS :
+
+    Search & Replace    —   AVETC##
+    Line 160    —   This month's rules
+    Line 200    —   Contest end date.
+    Line 250    —   Tweet embed
+    Line 225    —   Sponsored links
+
+-->
+
+
+<body>
+    <header>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+        <div class="header-container">
+            <a href="index.html">
+                <div class="brand-container">
+
+                    <svg class="logo-svg" width="272" height="271" viewBox="0 0 272 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M135.45 270.899L135.45 135.45L-1.18414e-05 135.45L135.45 270.899Z" id="page-icon-white"/>
+                        <path opacity="0.2" d="M-5.9207e-06 135.45L135.45 135.45L135.45 5.9207e-06L-5.9207e-06 135.45Z" id="page-icon-white"/>
+                        <path d="M135.45 216.72C90.5656 216.72 54.1799 180.334 54.1799 135.45C54.1799 90.5656 90.5656 54.1799 135.45 54.1799C165.531 54.1799 191.795 70.5232 205.847 94.8148H264.699C247.439 39.8614 196.099 0 135.45 0C60.6429 0 0 60.6429 0 135.45C0 210.257 60.6429 270.899 135.45 270.899V216.72Z" id="page-icon-white" />
+                        <path d="M135.45 135.45L135.45 270.899L135.57 270.78V270.899C210.377 270.899 271.02 210.257 271.02 135.45L135.45 135.45Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="130.935" y1="139.965" x2="299.344" y2="281.284" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.287531" stop-color="#FF6738"/>
+                        <stop offset="0.843195" stop-color="#C74A23"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                        
+                    <h2 class="name">Grabster Studios</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="index.html">
+                <div class="brand-container">
+                    <svg class="logo-svg" width="272" height="271" viewBox="0 0 272 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M135.45 270.899L135.45 135.45L-1.18414e-05 135.45L135.45 270.899Z" id="page-icon-white"/>
+                        <path opacity="0.2" d="M-5.9207e-06 135.45L135.45 135.45L135.45 5.9207e-06L-5.9207e-06 135.45Z" id="page-icon-white"/>
+                        <path d="M135.45 216.72C90.5656 216.72 54.1799 180.334 54.1799 135.45C54.1799 90.5656 90.5656 54.1799 135.45 54.1799C165.531 54.1799 191.795 70.5232 205.847 94.8148H264.699C247.439 39.8614 196.099 0 135.45 0C60.6429 0 0 60.6429 0 135.45C0 210.257 60.6429 270.899 135.45 270.899V216.72Z" id="page-icon-white" />
+                        <path d="M135.45 135.45L135.45 270.899L135.57 270.78V270.899C210.377 270.899 271.02 210.257 271.02 135.45L135.45 135.45Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="130.935" y1="139.965" x2="299.344" y2="281.284" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.287531" stop-color="#FF6738"/>
+                        <stop offset="0.843195" stop-color="#C74A23"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </a>
+
+            <div class="slide-navlist-container">
+                <ul class="nav-list">
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><span id="divider-line">|</span></li>
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+
+                    <!-- Sidebar toggle button -->
+                    <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img id="avetc-banner" src="/images/avetc_banner.png" alt="">
+        <div class="page-title-container">
+            <!-- DESCRIPTION -->
+            <h1 class="page-title">
+
+                <svg  id="page-icon" height="68" viewBox="-5 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M54.0741 13.3333H48.1481V7.40735H60V16.8899C60 23.1321 54.2235 27.4073 48.1481 27.4073V21.4814C51.8912 21.4814 54.0741 18.9921 54.0741 16.8899V13.3333Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.92594 13.3333H11.8519V7.40735H1.62125e-05V16.8899C1.62125e-05 23.1321 5.77649 27.4073 11.8519 27.4073V21.4814C8.10885 21.4814 5.92594 18.9921 5.92594 16.8899V13.3333Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4612 45.1852H44.5388V54.8148H51.8518V60.7407H8.14813V54.8148H15.4612V45.1852ZM21.3871 54.8148H38.6128V51.1111H21.3871V54.8148Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.88892 0H51.1111V18.8549C51.1111 29.6087 43.2489 38.5632 32.963 40.0237V51.1111H27.0371V40.0237C16.7512 38.5632 8.88892 29.6087 8.88892 18.8549V0ZM14.8148 5.92593V18.8549C14.8148 27.4293 21.654 34.3063 30 34.3063C38.346 34.3063 45.1852 27.4293 45.1852 18.8549V5.92593H14.8148Z" fill="#FF6738"/>
+                </svg>
+                    
+                A Very Epic Theme Contest
+            </h1>
+            <div id="about-me-container">
+                <p class="page-description" id="paragraph">
+                    Abbreviated "AVETC", is a monthly Android theming contest where participants are given a set of rules to follow and make a theme.
+                    3 of the best entries, voted by themers like you, win codes to apps from various developers including myself.
+                </p>
+            </div>
+            
+            <!-- RULES -->
+
+            <h1 class="page-title title-line-2">
+
+                <svg id="page-icon" height="68" viewBox="0 0 81 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9215 14.4001C20.8943 14.4001 16.0082 19.2861 16.0082 25.3134V52.2303H44.5136V59.4081C44.5136 62.7453 47.219 65.4507 50.5562 65.4507C53.8934 65.4507 56.5988 62.7453 56.5988 59.4081V20.0948C56.5988 18.0275 57.1349 16.0855 58.0757 14.4001H26.9215ZM68.2994 8.39417H26.9215C17.5773 8.39417 10.0023 15.9691 10.0023 25.3134V52.2303H0V55.2333C0 64.1932 7.26346 71.4567 16.2234 71.4567H50.5562C57.2104 71.4567 62.6047 66.0623 62.6047 59.4081V30.7517H80V20.0948C80 13.6327 74.7615 8.39417 68.2994 8.39417ZM62.6047 24.7457H73.994V20.0948C73.994 16.9497 71.4445 14.4001 68.2994 14.4001C65.1543 14.4001 62.6047 16.9497 62.6047 20.0948V24.7457ZM40.1302 65.4507C39.0984 63.6744 38.5077 61.6103 38.5077 59.4081V58.2362H6.45437C7.73698 62.4137 11.6255 65.4507 16.2234 65.4507H40.1302Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7945 26.7873L21.7945 21.5321L51.0735 21.5321L51.0735 26.7873L21.7945 26.7873Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7945 37.2978L21.7945 32.0426L51.0735 32.0426L51.0735 37.2978L21.7945 37.2978Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7945 47.0576L21.7945 41.8024L38.3108 41.8024L38.3108 47.0576L21.7945 47.0576Z" fill="#FF6738"/>
+                    </svg>
+                    
+
+                General Contest Rules
+
+            </h1>
+            <div id="about-me-container">
+                    <ol class="page-description" id="paragraph">
+                        <li>Only 1 theme per user is allowed.</li>
+                        <li>Each month's contest is unique and has a specific set of rules. You must follow them. These rules can be found below.</li>
+                        <li>Theme must be your own creation. You can use presets or widgets.</li>
+                        <li>No collaboration or asking for feedback is allowed.</li>
+                        <li>Submitting framed screenshots are allowed but there must be 1 additional screenshot without any frames, so your theme can be better viewed.</li>
+                        <li>Entry must be tweeted with hashtag <b>#AVETC04</b>. The number at the end represents the running 
+                        contest month.<b>THIS IS VERY IMPORTANT.</b> If you get this wrong, I won't be able to find your entry.
+                    </ol>
+            </div>
+            
+            <!-- THIS MONTH'S RULES -->
+
+            <h1 class="page-title title-line-2">
+
+                <svg id="page-icon" height="68" viewBox="0 0 108 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.8293 8C28.8009 8 22.2927 14.5083 22.2927 22.5366V58.3902H60.2622V67.9512C60.2622 72.3964 63.8658 76 68.311 76C72.7562 76 76.3598 72.3964 76.3598 67.9512V15.5854C76.3598 12.8318 77.0739 10.2449 78.327 8H36.8293ZM91.9451 0H36.8293C24.3827 0 14.2927 10.09 14.2927 22.5366V58.3902H0.969513V62.3902C0.969513 74.325 10.6445 84 22.5793 84H68.311C77.1745 84 84.3598 76.8147 84.3598 67.9512V29.7805H107.53V15.5854C107.53 6.97781 100.553 0 91.9451 0ZM84.3598 21.7805H99.5305V15.5854C99.5305 11.3961 96.1344 8 91.9451 8C87.7558 8 84.3598 11.3961 84.3598 15.5854V21.7805ZM54.4234 76C53.0491 73.6339 52.2622 70.8845 52.2622 67.9512V66.3902H9.56682C11.2753 71.9546 16.4548 76 22.5793 76H54.4234Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 24.5L30 17.5L69 17.5L69 24.5L30 24.5Z" id="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 38.5L30 31.5L69 31.5L69 38.5L30 38.5Z" id="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 51.5L30 44.5L52 44.5L52 51.5L30 51.5Z" id="page-icon-white" />
+                </svg>
+
+                Rules For AVETC<span style="color: #9c9c9c;">04</span>
+
+            </h1>
+            <div id="about-me-container">
+                    <ol class="page-description" id="paragraph">
+                        <li>Let's give some love to our Docks. Make a unique and beautiful dock that no one has ever seen!</li>
+                        <li>Use wallpapers from this Unsplash collection only: <u><a href="https://unsplash.com/collections/a6dYgWPda8o/a-space-for-dock" target="_blank">A Space for Dock</a></u>.</li>
+                        <li>Though not against the rules, try not only put icons in the dock. Be creative with it. Maybe show something useful alongside icons.</li>
+                    </ol>
+            </div>
+            
+            <!-- WINNERS -->
+
+            <h1 class="page-title title-line-2">
+
+                <svg id="page-icon" height="68" viewBox="0 0 101 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M45.4485 77.9727C29.6529 77.9727 16.4317 65.9677 15.4205 50.3647L23.4037 49.8473C24.1318 61.0809 33.7072 69.9727 45.4485 69.9727V77.9727Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.8691 19.4946L30.355 16.8787L30.9648 16.9887C53.93 21.1317 73.1292 36.6712 81.7081 58.1281L79.6636 63.248L5.89393 97.1348L0.448486 92.1794L25.8691 19.4946ZM28.872 35.1414L11.1071 85.9364L61.9035 62.6026C46.9094 59.4278 34.5301 49.0331 28.872 35.1414ZM71.7499 55.6131H71.5929C53.3462 55.6131 38.0217 42.9547 34.3801 25.9397C50.534 30.2426 64.0873 41.0364 71.7499 55.6131Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2525 0.86377C53.9974 12.5368 53.7527 31.3166 46.424 40.644L40.1335 35.7014C44.7382 29.8409 45.5783 16.0752 34.2869 7.13614L39.2525 0.86377Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M92.1297 49.741C82.2229 49.0578 72.2692 49.7669 62.5593 51.8476L60.8831 44.0252C71.3242 41.7878 82.0274 41.0253 92.6801 41.76L92.9146 41.7761L92.3642 49.7572L92.1297 49.741Z" fill="#FF6738"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M88.0014 16.2174C87.3822 16.3641 85.9335 16.9537 84.5008 21.2518C83.9408 22.9318 83.0884 24.4417 81.8064 25.5863C80.4834 26.7676 78.9665 27.324 77.5082 27.4941C75.1364 27.7708 72.6886 26.9941 71.2756 26.5457C71.1674 26.5113 71.0653 26.4789 70.9698 26.4491C70.6221 26.3404 70.3247 26.2492 70.0649 26.1739C70.0621 26.2738 70.0606 26.381 70.0606 26.4959C70.0606 32.463 67.3289 36.434 63.6344 38.6373C60.2265 40.6697 56.335 41.0192 53.7651 40.7856L54.4894 32.8184C55.8972 32.9464 57.9725 32.6993 59.5368 31.7664C60.8145 31.0044 62.0606 29.6416 62.0606 26.4959C62.0606 24.8154 62.2586 23.1545 62.9066 21.7096C63.6295 20.0973 64.8825 18.846 66.6006 18.2603C68.1056 17.7472 69.56 17.8912 70.5443 18.0682C71.5512 18.2493 72.5723 18.5683 73.3442 18.8096L73.356 18.8132C75.2032 19.3905 76.0277 19.5926 76.5303 19.553C76.6063 19.4463 76.7512 19.2022 76.9113 18.7219C78.7332 13.2564 81.6238 9.50658 86.1577 8.43278C90.1497 7.48729 94.2731 9.01149 97.4324 10.3279L94.3555 17.7125C91.0057 16.3167 89.1623 15.9425 88.0014 16.2174ZM76.4743 19.6225C76.4743 19.6225 76.4748 19.622 76.4759 19.621C76.4748 19.622 76.4743 19.6225 76.4743 19.6225ZM68.8322 25.9052C68.8322 25.9052 68.8335 25.9051 68.8361 25.9052C68.8336 25.9052 68.8323 25.9052 68.8322 25.9052Z" fill="#FF6738"/>
+                    <path d="M100.776 30.5788C100.776 34.1737 97.8615 37.0879 94.2667 37.0879C90.6718 37.0879 87.7576 34.1737 87.7576 30.5788C87.7576 26.9839 90.6718 24.0697 94.2667 24.0697C97.8615 24.0697 100.776 26.9839 100.776 30.5788Z" fill="#FF6738"/>
+                    <path d="M19.4121 22.4424C19.4121 25.1385 17.2264 27.3242 14.5303 27.3242C11.8341 27.3242 9.64847 25.1385 9.64847 22.4424C9.64847 19.7462 11.8341 17.5605 14.5303 17.5605C17.2264 17.5605 19.4121 19.7462 19.4121 22.4424Z" fill="#FF6738"/>
+                    <path d="M85.5879 71.2606C85.5879 73.3576 83.8879 75.0576 81.7909 75.0576C79.6939 75.0576 77.9939 73.3576 77.9939 71.2606C77.9939 69.1636 79.6939 67.4636 81.7909 67.4636C83.8879 67.4636 85.5879 69.1636 85.5879 71.2606Z" fill="#FF6738"/>
+                </svg>
+                    
+                Winners & Prizes
+
+            </h1>
+            <div id="about-me-container">
+                    <ol class="page-description" id="paragraph">
+                        <li>Contest will end January 5, 2022.</li>
+                        <li>6 submissions will be selected based on the theme's creativity, uniqueness and general design.</li>
+                        <li>A poll will be created that runs for 48 hours where the general public chooses which of the 6 submissions they like most.</li>
+                        <li>At the end of 48 hours, top 3 most voted entries will win the contest.</li>
+                        <li>Winners must DM me within the next 48 hours of the poll to claim their prizes.</li>
+                    </ol>
+            </div>
+            
+            <!-- SPONSORS -->
+
+            <h1 class="page-title title-line-2">
+
+                <svg  id="page-icon" height="68" viewBox="-5 0 65 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M54.0741 13.3333H48.1481V7.40735H60V16.8899C60 23.1321 54.2235 27.4073 48.1481 27.4073V21.4814C51.8912 21.4814 54.0741 18.9921 54.0741 16.8899V13.3333Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.92594 13.3333H11.8519V7.40735H1.62125e-05V16.8899C1.62125e-05 23.1321 5.77649 27.4073 11.8519 27.4073V21.4814C8.10885 21.4814 5.92594 18.9921 5.92594 16.8899V13.3333Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4612 45.1852H44.5388V54.8148H51.8518V60.7407H8.14813V54.8148H15.4612V45.1852ZM21.3871 54.8148H38.6128V51.1111H21.3871V54.8148Z" id="page-icon-white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.88892 0H51.1111V18.8549C51.1111 29.6087 43.2489 38.5632 32.963 40.0237V51.1111H27.0371V40.0237C16.7512 38.5632 8.88892 29.6087 8.88892 18.8549V0ZM14.8148 5.92593V18.8549C14.8148 27.4293 21.654 34.3063 30 34.3063C38.346 34.3063 45.1852 27.4293 45.1852 18.8549V5.92593H14.8148Z" fill="#FF6738"/>
+                </svg>
+                    
+                Prizes for AVETC<span style="color: #9c9c9c;">04</span>
+
+            </h1>
+            <div id="about-me-container">
+                    <ol class="page-description" id="paragraph">
+                        <li><u><a target="_blank" href="https://play.google.com/store/apps/details?id=com.icarus.tessa">Tessa Icon Pack</a></u> — Icarus</li>
+                        <li><u><a target="_blank" href="https://play.google.com/store/apps/details?id=dev.widgetology.prima.app">Prima Kustom Widgets</a></u> — Icarus</li>
+                        <li><u><a target="_blank" href="https://play.google.com/store/apps/details?id=cs14.pixelperfect.iconpack.vera">Vera Icon Pack</a></u> — One4Studio</li>
+                        <li><u><a target="_blank" href="https://play.google.com/store/apps/details?id=cs14.pixelperfect.iconpack.vera">MiniWall Wallpapers</a></u> — ArrowWalls</li>
+                        <p>Sponsor this contest by giving away codes. <u><a href="https://twitter.com/messages/compose?recipient_id=1379122908908433408" target="_blank">Get in touch via Twitter DM</a></u>.</p>
+                    </ol>
+                    
+            </div>
+
+        <!-- Twitter Embed -->
+        <div class="twitter-section">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">In A Very Epic Theme Contest 03 - <a href="https://twitter.com/hashtag/AVETC04?src=hash&amp;ref_src=twsrc%5Etfw">#AVETC04</a>, you have full creative freedom... EXCEPT the font style.<br><br>You are required to only use a Monospace font from Google fonts as your primary font. The rest is up to you.<br><br>❗ Read full list of updated rules here:<a href="https://t.co/87GmNsKxqM">https://t.co/87GmNsKxqM</a><br><br>🎉 <a href="https://t.co/2yz7PeZv8b">pic.twitter.com/2yz7PeZv8b</a></p>&mdash; Grabster Studios (@GrabsterStudios) <a href="https://twitter.com/GrabsterStudios/status/1456967941682077696?ref_src=twsrc%5Etfw">November 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <a href="https://twitter.com/search?q=%23AVETC04&src=typed_query&f=live" target="_blank" style="width: max-content;">
+                <button class="submissions-button" >
+                    <i class="ph-twitter-logo-fill"></i>Browse Contest Submissions
+                </button>
+            </a>
+        </div>
+        
+    </div>
+        
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li>
+                        <!-- Sidebar close button -->
+                        <i onclick="sideBar();backgroundDim()" class="mdi mdi-close" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="index.html">
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-Home-Variant-Outline"></i></li>
+                    </a>
+                    <a href="apps.html">
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
+                    </a>
+                    <a href="store.html">
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-Storefront-Outline"></i></li>
+                    </a>
+                    <a href="about.html">
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
+                    </a>
+                    <a href="AVETC.html">
+                        <li>Theme Contest<i id="sidebar-icon" class="mdi mdi-Trophy-Outline"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    
+
+    <footer>
+        <p>Designed & coded with stress & love by Grabster.</p>
+        <div>
+            <a href="https://twitter.com/grabstertv" target="_blank">
+                <i class="mdi mdi-twitter social-icons twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/grabstertv" target="_blank">
+                <i class="mdi mdi-youtube social-icons youtube"></i>
+            </a>
+
+            <a href="https://invite.gg/Grabster" target="_blank">
+                <i class="mdi mdi-discord social-icons discord"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
