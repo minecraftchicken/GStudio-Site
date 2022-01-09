@@ -77,6 +77,13 @@ h3, p {
     color: rgba(var(--color-primary), 0.3);
 }
 
+#highlight {
+    color: #141414;
+    background-color: #ffc1ae;
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
 /* /// */
 
 a {
