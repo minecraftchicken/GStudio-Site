@@ -82,14 +82,26 @@
         </div>
     </header>
 
+    <div id="announcement">
+
+        <p id="announcement-title">
+           <!-- Handled by content.js -->
+        </p>
+        <a target="_blank" href="https://flurly.com/p/ReevWallpapers">
+            <p id="announcement-link">
+                <!-- Handled by content.js --> <i class="ph-arrow-right"></i>
+            </p>
+        </a>
+    </div>
+
     <main>
-        <div id="warning-container">
+        <!-- <div id="warning-container">
             <div class="warning-card">
                 <h3 style="margin-top: 0;">Before you enter store...</h3>
                 <p>Store is currently a work in progress. Some items are just placeholders while others are coming soon.</p>
                 <button class="button-fill-cta" style="background-color: #fa744b;" onclick="storeWarning()">Got it!</button>
             </div>
-        </div>
+        </div> -->
 
         <!-- Featured Products-->
 
@@ -123,16 +135,34 @@
                 </h3>
                 <div class="buttons-container">
                     <div id="price-button">
-                        <button class="price-button">$3</button>
+                        <button class="price-button">$2.99</button>
                         <a href="https://flurly.com/p/ReevPriorityRequest" target="_blank"><button class="purchase-button">Purchase</button></a>
                     </div>
                 </div>
             </div>
 
+            <div class="item-type-compact">
+                <img class="item-image" src="images/store/reev-walls-ios.png" alt="">
+                <p id="item-label">
+                    Wallpapers
+                </p>
+                <span class="item-title" id="kill-padding">
+                    <h2 class="item-title-text">Reev Wallpapers for iOS</h2>
+                </span>
+                <h3 id="item-description">
+                    Over 60 handcrafted wallpapers from 5 different series, now available to make your iPhone more beautiful.
+                </h3>
+                <div class="buttons-container">
+                    <div id="price-button">
+                        <button class="price-button">$2.99</button>
+                        <a href="https://flurly.com/p/ReevWallpapers" target="_blank"><button class="purchase-button">Purchase</button></a>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <!-- COMING SOON -->
+        <!-- COMING SOON
 
         <div class="page-title-container" id="store-title">
             <h1 class="page-title">
@@ -208,7 +238,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
 
         <!-- Product categories
 
@@ -320,6 +352,9 @@
             </a>
         </div>
     </footer>
+
+    <!-- Content JS for global replacement -->
+    <script src="js/content.js"></script>
 </body>
 
 </html>
