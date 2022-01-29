@@ -1,0 +1,13 @@
+html {
+    --accent-color-bg: rgba(255, 103, 56, 0.15);
+}
+
+pre {
+    border-radius: 2px;
+    color: var(--accent-color);
+    background-color: var(--accent-color-bg);
+    margin: 0 2px;
+    padding: 3px 5px;
+    display: inline;
+    white-space: pre-wrap;
+}
