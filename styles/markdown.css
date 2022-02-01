@@ -14,7 +14,7 @@ pre, code {
     padding: 3px;
 }
 pre {
-    display: table-caption;
+    display: inline-block;
     margin: 4px;
 }
 

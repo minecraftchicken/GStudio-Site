@@ -611,7 +611,7 @@ li:not(:last-child) {
     }
     #background-dim {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.822);
         width: 100%;
         height: 100%;
         top: 0;
@@ -636,10 +636,10 @@ li:not(:last-child) {
         color: rgb(var(--color-primary));
     }
     #sidebar ul li {
-        padding: 25px 40px;
+        padding: 1em 2em;
     }
     #sidebar-icon {
-        padding-left: 15px;
+        padding-left: 16px;
     }
     /* Footer */
     footer {
@@ -647,7 +647,7 @@ li:not(:last-child) {
         flex-direction: column;
     }
     footer div {
-        padding-top: 15px;
+        padding-top: 16px;
     }
     .social-icons {
         padding-top: 20px;
