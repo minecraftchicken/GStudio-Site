@@ -77,6 +77,7 @@ p {
 
 h3 {
     color: rgb(var(--color-primary));
+    font-weight: 600;
 }
 
 pre, code {
@@ -102,6 +103,17 @@ blockquote {
 
   blockquote p {
     display: inline;
+  }
+
+  .section-title-img {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+  }
+
+  .section-title-img img {
+    width: 1.4em;
+    padding-right: 0.6em;
   }
 
   @media screen and (max-width: 1100px) {
