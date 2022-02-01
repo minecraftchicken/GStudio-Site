@@ -84,12 +84,13 @@
     </header>
 
     <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
 
         <h1 class="page-title">
 
             <svg id="page-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_941_113)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5072 30.586L38.0347 20.6942L34.2945 11.42L0.492788 25.0521L31.3153 101.479L40.5895 97.7387L13.5072 30.586Z" id="page-icon-white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5072 30.586L38.0347 20.6942L34.2945 11.42L0.492788 25.0521L31.3153 101.479L40.5895 97.7387L13.5072 30.586Z" fill="black"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M90 10H41V90H90V10ZM31 0V100H100V0H31Z" fill="#FF6738"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M83 27.5H49V20.5H83V27.5Z" id="page-icon-white" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M66 43.5H49V36.5H66V43.5Z" id="page-icon-white" />
@@ -118,6 +119,39 @@ $if(
 
         <p>Lorem ipsum, dolor sit amet consectetur <code>hello world</code> adipisicing elit. Repellat veritatis totam reiciendis quibusdam alias nemo labore tempora fugit quam deserunt doloribus, modi, temporibus, qui sequi vero officiis a facilis sint. Totam reiciendis quibusdam alias nemo labore tempora fugit quam deserunt doloribus, modi, temporibus, qui sequi vero officiis a facilis sint</p>
         <blockquote>A wise man once said, fuck this shit.</blockquote>
+
+        <!-- Sidebar -->
+
+        <div id="sidebar">
+            <div class="sidebar-container">
+                <ul>
+                    <li>
+                        <!-- Sidebar close button -->
+                        <i onclick="sideBar();backgroundDim()" class="mdi mdi-close" id="sidebar-button"></i>
+                    </li>
+                </ul>
+                <ul class="sidebar-links">
+                    <a href="../index.html">
+                        <li>Home<i id="sidebar-icon" class="mdi mdi-Home-Variant-Outline"></i></li>
+                    </a>
+                    <a href="../apps.html">
+                        <li>Apps<i id="sidebar-icon" class="mdi mdi-apps"></i></li>
+                    </a>
+                    <a href="../store.html">
+                        <li>Store<i id="sidebar-icon" class="mdi mdi-Storefront-Outline"></i></li>
+                    </a>
+                    <a href="../about.html">
+                        <li>About<i id="sidebar-icon" class="mdi mdi-information-outline"></i></li>
+                    </a>
+                    <a href="../contact.html">
+                        <li>Contact<i id="sidebar-icon" class="mdi mdi-account-box-outline"></i></li>
+                    </a>
+                    <a href="../AVETC.html">
+                        <li>Theme Contest<i id="sidebar-icon" class="mdi mdi-Trophy-Outline"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
 
     </main>
 
