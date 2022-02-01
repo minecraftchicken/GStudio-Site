@@ -55,6 +55,10 @@ h3, p {
     color: rgb(var(--color-secondary));
 }
 
+h1, h2, h3, h4 {
+    font-size: clamp(110%, 1.6vw, 100px);
+}
+
 p {
     line-height: 1.6em;
 }
