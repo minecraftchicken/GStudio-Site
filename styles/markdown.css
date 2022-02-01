@@ -1,13 +1,37 @@
 html {
-    --accent-color-bg: rgba(255, 103, 56, 0.15);
+    --accent-color-bg: 255, 103, 56;
 }
 
-pre {
+h1 {
+    padding-bottom: 12px;
+    border-bottom: solid 1px rgba(var(--color-primary), 0.15);
+}
+
+pre, code {
     border-radius: 2px;
     color: var(--accent-color);
-    background-color: var(--accent-color-bg);
-    margin: 0 2px;
-    padding: 3px 5px;
-    display: inline;
-    white-space: pre-wrap;
+    background-color: rgba(var(--accent-color-bg), 0.15);
+    padding: 3px;
 }
+pre {
+    display: table-caption;
+    margin: 4px;
+}
+
+blockquote {
+    color: rgba(var(--color-primary), 0.7);
+    background: rgba(var(--accent-color-bg), 0.05);
+    border-left: 4px solid var(--accent-color);
+    margin: 1.2em 16px;
+    padding: 1em 12px;
+    font-style: italic;
+    border-radius: 2px;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  .page-title {
+      padding-top: 1.5em;
+  }
