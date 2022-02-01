@@ -14,10 +14,6 @@
     padding-top: 30px;
 }
 
-.page-title-container p {
-    font-size: clamp(16px, 1vw, 80px);
-}
-
 /* Grid */
 
 .ph-arrows-out {

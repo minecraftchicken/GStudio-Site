@@ -2,12 +2,19 @@ html {
     --accent-color-bg: 255, 103, 56;
 
     /*-- Tag colors based on difficulty -- */
-    --tag-text-color: 245, 245, 245;
-    --easy: 70, 152, 246;
+    --tag-text-color: white;
+    --type: 48, 189, 192;
+    --easy: 84, 194, 90;
+    --medium: 70, 152, 246;
+    --advanced: 222, 93, 93;
 }
 
 html[data-theme='dark'] {
-    --tag-text-color: 47, 47, 47;
+    --tag-text-color: black;
+    --type: 87, 251, 255;
+    --easy: 119, 255, 127;
+    --medium: 76, 172, 255;
+    --advanced: 255, 113, 113;
 }
 
 main {
@@ -16,24 +23,47 @@ main {
 
 #title-container {
     border-bottom: solid 1px rgba(var(--color-primary), 0.15);
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     padding-top: 1.5em;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     align-content: center;
-    transition: color 300ms;
+    margin-bottom: 12px;
+    transition: color 300ms ease 0.3s;
+    justify-content: flex-end;
 }
 
-#tag {
-    background: rgb(var(--easy));
-    color: rgb(var(--tag-text-color));
+#tag-container {
+    margin: 4px 0 0 .8em;
+    font-weight: 500;
+}
+#tag-container span + span {
+    margin-left: 0.5em;
+}
+
+#tag-easy, #tag-medium, #tag-advanced, #tag-type {
+    color: var(--tag-text-color);
     padding: 4px 12px;
     border-radius: 4px;
-    margin: 0 0 0 .8em;
     font-size: 0.9em;
     transition: color 300ms;
-    font-weight: 500;
+}
+#tag-easy {
+    background: rgb(var(--easy));
+    transition: color 300ms ease;
+}
+#tag-medium {
+    background: rgb(var(--medium));
+    transition: color 300ms ease;
+}
+#tag-advanced {
+    background: rgb(var(--advanced));
+    transition: color 300ms ease;
+}
+#tag-type {
+    background: rgb(var(--type));
+    transition: color 300ms ease;
 }
 
 .subheading {
@@ -78,4 +108,15 @@ blockquote {
     main {
         margin: 0 0;
     }
+    #title-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #tag-container {
+        margin: 0 0 16px 0;
+    }
+    #tag-easy, #tag-medium, #tag-advanced, #tag-type {
+        padding: 4px 18px;
+    }
 }
+
