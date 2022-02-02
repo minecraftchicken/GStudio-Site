@@ -237,7 +237,7 @@ main, #announcement {
     font-weight: 500;
 }
 
-li {
+.nav-list li {
     padding: 0 20px;
 }
 

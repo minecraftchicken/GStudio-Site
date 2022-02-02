@@ -80,6 +80,10 @@ h3 {
     font-weight: 600;
 }
 
+ol li {
+    padding: 0 0.6em;
+}
+
 pre, code {
     border-radius: 2px;
     color: var(--accent-color);
