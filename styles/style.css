@@ -296,12 +296,12 @@ main,
   width: fit-content;
 }
 
-#hover-arrow {
+.hover-arrow {
   transition: all 0.2s ease;
   opacity: 0;
 }
 
-.item-title-text:hover ~ #hover-arrow {
+.item-title-text:hover ~ .hover-arrow {
   transform: translate(12px, 0);
   opacity: 1;
   color: var(--accent-color);
