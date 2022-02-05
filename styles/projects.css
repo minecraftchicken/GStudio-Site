@@ -1,80 +1,80 @@
 .page-title {
-    /* font-size: 1.6vw; */
-    display: flex;
-    align-items: center;
-    margin: 0;
+  /* font-size: 1.6vw; */
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .page-description {
-    margin: 0;
+  margin: 0;
 }
 
 .page-title-container {
-    padding: 60px 0;
-    padding-top: 30px;
+  padding: 60px 0;
+  padding-top: 30px;
 }
 
 /* Grid */
 
 .ph-arrows-out {
-    font-size: large;
-    padding-top: 3px;
+  font-size: large;
+  padding-top: 3px;
 }
 
 .item-image {
-    max-height: 100%;
-    object-fit: cover;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* Logoflio Page */
 
 .item-type-compact p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* Long previews */
 
 .long-preview {
-    height: 600px;
-    filter: brightness(1);
-    transition: filter 300ms ease;
+  height: 600px;
+  filter: brightness(1);
+  transition: filter 300ms ease;
 }
 
 .long-preview:hover {
-    filter: brightness(0.8);
-    transition: filter 300ms ease;
+  filter: brightness(0.8);
+  transition: filter 300ms ease;
 }
 
-#HD-label {
-    position: absolute;
-    z-index: 2;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 50px;
-    opacity: 0;
-    transition: all 300ms ease;
-    cursor: pointer;
-    filter: var(--image-invert);
+.hd-label {
+  position: absolute;
+  z-index: 2;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 50px;
+  opacity: 0;
+  transition: all 300ms ease;
+  cursor: pointer;
+  filter: var(--image-invert);
 }
 
-#HD:hover > #HD-label {
-    opacity: 1;
-    transition: all 300ms ease;
+.hd:hover > .hd-label {
+  opacity: 1;
+  transition: all 300ms ease;
 }
 
 /* --- Mobile --- */
 
 @media screen and (max-width: 900px) {
-    .landing-title {
-        font-size: x-large;
-    }
+  .landing-title {
+    font-size: x-large;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .landing-title {
-        font-size: x-large;
-    }
-    #page-icon {
-        width: 22px;
-    }
+  .landing-title {
+    font-size: x-large;
+  }
+  .page-icon {
+    width: 22px;
+  }
 }

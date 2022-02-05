@@ -515,12 +515,12 @@ footer div {
   padding-top: 4px;
 }
 
-#page-icon {
+.page-icon {
   width: 30px;
   padding-right: 15px;
 }
 
-#page-icon-white {
+.page-icon-white {
   fill: rgb(var(--color-primary));
 }
 
