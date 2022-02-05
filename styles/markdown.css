@@ -71,6 +71,8 @@ main {
     padding-top: 0.7em;
 }
 
+
+
 p {
     margin: 0.5em 0;
 }
@@ -109,15 +111,22 @@ blockquote {
     display: inline;
   }
 
-  .section-title-img {
+  .section-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-title {
       display: flex;
       flex-direction: row;
       align-content: center;
   }
 
-  .section-title-img img {
-    width: 1.4em;
+  .section-icon {
+    float: left;
+    width: 1.7em;
     padding-right: 0.6em;
+    align-content: center;
   }
 
   @media screen and (max-width: 1100px) {
