@@ -115,12 +115,14 @@ blockquote {
   .section-container {
     display: flex;
     align-items: center;
+    margin: 1.6em 0 0.6em 0;
   }
 
   .section-title {
       display: flex;
       flex-direction: row;
       align-content: center;
+      margin: 0;
   }
 
   .section-icon {
