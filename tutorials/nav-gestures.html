@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Basic -->
-  <title>Creating Home Pages — Tutorial</title>
+  <title>Navigation Gestures — Tutorial</title>
   <link rel="shortcut icon" type="/image/jpg" href="../images/logo.png" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../styles/style.css" />
@@ -111,84 +111,64 @@
             </clipPath>
           </defs>
         </svg>
-        Creating home pages
+        Navigation gestures
       </h1>
     </div>
 
     <p>
-      Press the home button on your phone and scroll horizontally. This is
-      where you put your widgets and icons. Each time you scroll, you're
-      switching pages. These are called <i>home pages</i> or
-      <i>home screens</i>.
-    </p>
-
-    <h2 class="subheading">Why?</h2>
-    <p>
-      Empty home pages are essential for KLWP presets that function as
-      launchers by themselves and requires the home pages to be empty, so they
-      are not obscured by widgets or icons.
-    </p>
-
-    <h2 class="subheading">What you need:</h2>
-    <p>
-      This tutorial will only cover
-      <a class="hyperlink" href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">Nova
-        Launcher</a>
-      and
-      <a class="hyperlink" href="https://github.com/LawnchairLauncher/lawnchair">Lawnchair</a>. If you're using a
-      pre-installed launcher, you may be out of luck
-      because chances are, it does not support empty pages or wallpaper scroll
-      which are both required for KLWP. To proceed, make sure you have either
-      Nova launcher or Lawnchair installed.
+      Google has made it difficult to use navigation gestures with third party
+      launchers since Android 10. While some manufacturers made it possible to
+      use them, others simply refuse to work. This article will list all
+      workarounds you need to know across (almost) all Android skins to make
+      gestures work with your preferred launcher.
     </p>
 
     <div class="section-container">
-      <img class="section-icon" src="../images/tutorial/basic-icons/nova-launcher.png" />
-      <h3 class="section-title">In Nova Launcher:</h3>
+      <img class="section-icon" src="../images/tutorial/basic-icons/samsung-logo.png" />
+      <h3 class="section-title">Samsung OneUI:</h3>
     </div>
-    <ol>
-      <li>Tap and hold on your home screen to bring up the home options.</li>
-      <li>
-        Swipe to the left multiple times until you see a home page with
-        <code>+</code> icon.
-      </li>
-      <li>Tap it to create a new empty home page.</li>
-      <li>Tap <i>"Create blank page"</i> when asked.</li>
-    </ol>
-
-    <div class="section-container">
-      <img class="section-icon" src="../images/tutorial/basic-icons/lawnchair.png" />
-      <h3 class="section-title">In Lawnchair v12+:</h3>
-    </div>
-
     <p>
-      Lawnchair currently does not let you create empty home pages. However,
-      there is an easy workaround to make it working.
+      Samsung allows gestures with third party launchers, but it has a stupid
+      delay when opening recent apps from the home screen. Here's a workaround
+      to eliminate it...
     </p>
     <ol>
       <li>
-        Install
-        <a href="https://play.google.com/store/apps/details?id=com.blankicon" class="hyperlink" target="_blank">Blank
-          Icon/Widget</a>
-        by Straight Up.
+        Install your preferred GoodLock launcher. I prefer
+        <a class="hyperlink" href="https://play.google.com/store/apps/details?id=yuh.yuh.finelock"
+          target="_blank">FineLock</a>
       </li>
-
-      <li>In Lawnchair, tap and hold to bring up the home screen options.</li>
-      <li>Tap <i>widget</i> to open widgets list.</li>
-      <li>Search for <i>Blank Icon</i> and expand it.</li>
+      <li>Open it and navigate to <i>Left Handle</i>.</li>
       <li>
-        Tap and hold on the <i>Blank Widget</i> and take it to the right edge
-        of the screen. Place it on this new home page somewhere you won't be
-        placing any icons or widgets at. My preferred location is on the top
-        left of the sccreen or in the middle.
+        Go to <i>Diagonal Down</i> or <i>Up</i>, whichever you prefer and
+        select <i>Recent Key</i>
+        from the list.
       </li>
       <li>
-        If you created a widget for the first time in Lawnchair, you will be
-        prompted to allow widget creation. Check
-        <i>Allow Lawnchair to create widgets and access their data</i> and
-        then tap <i>Create</i>
+        Repeat the process if you want the same gesture to apply on the right
+        side as well.
+      </li>
+      <li>
+        On your home screen, make the gesture you set recent key to and it
+        will immediately open your recent apps screen without delay.
       </li>
     </ol>
+    <p>
+      <b>Limitation:</b> Does not work with OneUI Core due to lack of GoodLock
+      support.
+    </p>
+
+    <div class="section-container">
+      <img class="section-icon" src="../images/tutorial/basic-icons/miui-logo.png" />
+      <h3 class="section-title">Xiaomi MIUI:</h3>
+    </div>
+
+    <p>
+      If you have a Xiaomi phone, you're out of luck. They've made use of any
+      third party gesture app increasingly difficult to set up. Until a
+      workaround is in sight, the best you can do right now, is not use a
+      third party launcher.
+    </p>
 
     <!---- Sidebar ---->
     <div id="sidebar">

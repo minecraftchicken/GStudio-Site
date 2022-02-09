@@ -268,6 +268,11 @@ main,
   padding-top: 20px;
 }
 
+.item-info {
+  margin: 0.25em 0;
+  font-size: clamp(1.1em, 1vw, 100px);
+}
+
 /* Sub-items styling */
 
 .item-image {
@@ -278,7 +283,9 @@ main,
 .item-type-compact {
   position: relative;
   margin-bottom: 50px;
-  flex-basis: calc(100% / 3);
+  /* flex-basis: calc(100% / 3); */
+  flex-basis: calc(95% / 3);
+  margin-right: 1%;
 }
 
 .item-type-compact h2 {
@@ -293,7 +300,6 @@ main,
 .item-title {
   display: flex;
   align-items: center;
-  width: fit-content;
 }
 
 .hover-arrow {
