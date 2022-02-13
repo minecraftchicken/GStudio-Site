@@ -38,7 +38,7 @@
                 <ul class="nav-list">
                     <li><a href="apps.html">Apps</a></li>
                     <li><a href="store.html">Store</a></li>
-                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li class="nav-active"><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="AVETC.html">Theme Contest</a></li>
 
@@ -68,7 +68,7 @@
                 <ul class="nav-list">
                     <li><a href="apps.html">Apps</a></li>
                     <li><a href="store.html">Store</a></li>
-                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li class="nav-active"><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="AVETC.html">Theme Contest</a></li>
 
@@ -88,41 +88,53 @@
 
     <main>
         <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
-        
+
         <div class="page-title-container">
             <h1 class="page-title">
                 <svg class="page-icon" height="68" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.0014 55.6623C31.9316 55.6623 16.4771 67.5817 10.9215 84.3091C9.98329 87.1339 6.93272 88.6634 4.10785 87.7252C1.28298 86.787 -0.246464 83.7364 0.691744 80.9115C7.62739 60.0288 27.0275 44.8831 50.0014 44.8831C72.9753 44.8831 92.3754 60.0288 99.311 80.9115C100.249 83.7364 98.7198 86.787 95.8949 87.7252C93.07 88.6634 90.0195 87.1339 89.0812 84.3091C83.5257 67.5817 68.0712 55.6623 50.0014 55.6623Z" class="page-icon-white"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.0014 15.7792C41.5305 15.7792 34.9105 22.4289 34.9105 30.3311C34.9105 38.2334 41.5305 44.8831 50.0014 44.8831C58.4722 44.8831 65.0923 38.2334 65.0923 30.3311C65.0923 22.4289 58.4722 15.7792 50.0014 15.7792ZM24.1313 30.3311C24.1313 16.2065 35.8501 5 50.0014 5C64.1526 5 75.8715 16.2065 75.8715 30.3311C75.8715 44.4557 64.1526 55.6623 50.0014 55.6623C35.8501 55.6623 24.1313 44.4557 24.1313 30.3311Z" fill="#FF6738"/>
-                    </svg>
-                    
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M50.0014 55.6623C31.9316 55.6623 16.4771 67.5817 10.9215 84.3091C9.98329 87.1339 6.93272 88.6634 4.10785 87.7252C1.28298 86.787 -0.246464 83.7364 0.691744 80.9115C7.62739 60.0288 27.0275 44.8831 50.0014 44.8831C72.9753 44.8831 92.3754 60.0288 99.311 80.9115C100.249 83.7364 98.7198 86.787 95.8949 87.7252C93.07 88.6634 90.0195 87.1339 89.0812 84.3091C83.5257 67.5817 68.0712 55.6623 50.0014 55.6623Z"
+                        class="page-icon-white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M50.0014 15.7792C41.5305 15.7792 34.9105 22.4289 34.9105 30.3311C34.9105 38.2334 41.5305 44.8831 50.0014 44.8831C58.4722 44.8831 65.0923 38.2334 65.0923 30.3311C65.0923 22.4289 58.4722 15.7792 50.0014 15.7792ZM24.1313 30.3311C24.1313 16.2065 35.8501 5 50.0014 5C64.1526 5 75.8715 16.2065 75.8715 30.3311C75.8715 44.4557 64.1526 55.6623 50.0014 55.6623C35.8501 55.6623 24.1313 44.4557 24.1313 30.3311Z"
+                        fill="#FF6738" />
+                </svg>
+
 
                 About Me
             </h1>
             <div id="about-me-container">
                 <p class="page-description" id="about-me">I’m Grabster, A 21 year old digital artist, content creator
                     and tech enthusiast from Pakistan. I invest most of my time making
-                    art and watching YouTube videos. The latter may be YouTube algorithm's fault suggesting me memes that
+                    art and watching YouTube videos. The latter may be YouTube algorithm's fault suggesting me memes
+                    that
                     I can’t resist watching.
                     <br><br>
-                    I've been making <a class="hyperlink"  href="https://youtube.com/grabstertv" target="_blank"> YouTube videos</a> since 2015 and have built an amazing community of over 17,000 people.
+                    I've been making <a class="hyperlink" href="https://youtube.com/grabstertv" target="_blank"> YouTube
+                        videos</a> since 2015 and have built an amazing community of over 17,000 people.
                     My goal is to teach new skills with easy to follow instructions and entertaining commentary.
                     <br><br>
                     For the past couple years I have been interested in Android customization and theming in general. I
                     have designed a bunch of
-                    presets for <a class="hyperlink" 
-                            href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US" target="_blank">Kustom
-                            Live Wallpaper Maker</a> (also known as KLWP) and I also made my own Icon Packs called
-                    <a class="hyperlink"  href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios" target="_blank">Reev
-                            Pro</a> and <a class="hyperlink"  href="https://play.google.com/store/apps/details?id=com.reevdark.grabsterstudios" target="_blank">Reev
-                                Dark</a> that I update
+                    presets for <a class="hyperlink"
+                        href="https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en&gl=US"
+                        target="_blank">Kustom
+                        Live Wallpaper Maker</a> (also known as KLWP) and I also made my own Icon Packs called
+                    <a class="hyperlink"
+                        href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios"
+                        target="_blank">Reev
+                        Pro</a> and <a class="hyperlink"
+                        href="https://play.google.com/store/apps/details?id=com.reevdark.grabsterstudios"
+                        target="_blank">Reev
+                        Dark</a> that I update
                     with new content on a weekly basis.
                     <br><br>
                     When I’m not working, I listen to music and play games. My music taste is quite diverse but the
                     genres I’m most interested in are
                     Dubstep and Synthwave. My gaming taste however is very specific. I only
                     play fast paced games that
-                    keeps me on the edge such as first person shooters, racing and old-school Contra games that I’ve been
+                    keeps me on the edge such as first person shooters, racing and old-school Contra games that I’ve
+                    been
                     trying to beat a speed-run record of.
                     <br><br>
                     I’m mostly active on Twitter and Discord. I do exist on other social media sites but I

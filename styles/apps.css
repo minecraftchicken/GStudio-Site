@@ -68,7 +68,7 @@
   padding: 0 25px;
   margin: 0 5px 0 0;
   border: 0;
-  background-color: var(--accent-color);
+  background-color: rgb(var(--accent-color));;
   color: #fcfcfc;
   transition: all 0.2s ease;
 }

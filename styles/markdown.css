@@ -89,7 +89,7 @@ ol li {
 
 pre, code {
     border-radius: 2px;
-    color: var(--accent-color);
+    color: rgb(var(--accent-color));;
     background-color: rgba(var(--accent-color-bg), 0.15);
     padding: 3px;
 }
@@ -101,7 +101,7 @@ pre {
 blockquote {
     color: rgba(var(--color-primary), 0.7);
     background: rgba(var(--accent-color-bg), 0.05);
-    border-left: 4px solid var(--accent-color);
+    border-left: 4px solid rgb(var(--accent-color));;
     margin: 1.2em 16px;
     padding: 1em 12px;
     font-style: italic;
