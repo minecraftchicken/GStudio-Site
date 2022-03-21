@@ -26,6 +26,10 @@
   object-fit: cover;
 }
 
+.hishoot-preview {
+  height: 400px;
+}
+
 /* Logoflio Page */
 
 .item-type-compact p {
