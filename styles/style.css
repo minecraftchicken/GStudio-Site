@@ -60,7 +60,7 @@ p {
 h1,
 h2,
 h4 {
-  font-size: clamp(1.6em, 1.6vw, 100px);
+  font-size: clamp(1.4em, 1.6vw, 100px);
 }
 
 p {
