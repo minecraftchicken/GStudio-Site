@@ -40,11 +40,18 @@
 
 .long-preview {
   height: 600px;
+}
+
+.fit-height-preview {
+  height: 100%;
+}
+
+.long-preview, .fit-height-preview {
   filter: brightness(1);
   transition: filter 300ms ease;
 }
 
-.long-preview:hover {
+.long-preview:hover, .fit-height-preview:hover {
   filter: brightness(0.8);
   transition: filter 300ms ease;
 }
@@ -64,6 +71,11 @@
 .hd:hover > .hd-label {
   opacity: 1;
   transition: all 300ms ease;
+}
+
+.yt-title {
+  font-size: clamp(1.4em, 0.6vw, 100px);
+  font-weight: 600;
 }
 
 /* --- Mobile --- */
