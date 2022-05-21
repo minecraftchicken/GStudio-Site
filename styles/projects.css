@@ -74,9 +74,20 @@
 }
 
 .yt-title {
-  font-size: clamp(1.4em, 0.6vw, 100px);
-  font-weight: 600;
+  font-size: clamp(1.2em, 0.6vw, 100px);
+  font-weight: 700;
 }
+
+.vid1, .vid2, .vid3, .vid4, .vid5, .vid6, .vid7 {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+.vid1:hover, .vid2:hover, .vid3:hover, .vid4:hover, .vid5:hover, .vid6:hover, .vid7:hover {
+  opacity: 1;
+  transition: all 0.2s ease;
+} 
 
 /* --- Mobile --- */
 
