@@ -106,9 +106,8 @@
 /* QR Code Animation */
 
 #reev_qr, #reevdark_qr, #dashcards_qr, #minimus_qr, #gradjent_qr {
-  position: fixed;
   opacity: 0;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 #reev_qr.reev_qr_enabled, #reevdark_qr.reevdark_qr_enabled, #dashcards_qr.dashcards_qr_enabled, #minimus_qr.minimus_qr_enabled, #gradjent_qr.gradjent_qr_enabled {
@@ -125,7 +124,7 @@
   z-index: 1;
 
   opacity: 1;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 #reev_qr.reev_qr_enabled p, #reevdark_qr.reevdark_qr_enabled p, #dashcards_qr.dashcards_qr_enabled p, #minimus_qr.minimus_qr_enabled p, #gradjent_qr.gradjent_qr_enabled p {
