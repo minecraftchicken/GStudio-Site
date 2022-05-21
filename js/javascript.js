@@ -57,3 +57,35 @@ function toastMessage() {
   // After 3 seconds, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("toast-shown", ""); }, 3000);
 }
+
+// QR IDS
+
+  // Reev Pro
+function reev_qr() {
+  var element = document.getElementById("reev_qr");
+  element.classList.toggle("reev_qr_enabled");
+}
+
+  // Reev Dark
+  function reevdark_qr() {
+    var element = document.getElementById("reevdark_qr");
+    element.classList.toggle("reevdark_qr_enabled");
+  }
+
+  // DashCards
+  function dashcards_qr() {
+    var element = document.getElementById("dashcards_qr");
+    element.classList.toggle("dashcards_qr_enabled");
+  }
+
+  // Gradjent
+  function gradjent_qr() {
+    var element = document.getElementById("gradjent_qr");
+    element.classList.toggle("gradjent_qr_enabled");
+  }
+
+  // Minimus
+  function minimus_qr() {
+    var element = document.getElementById("minimus_qr");
+    element.classList.toggle("minimus_qr_enabled");
+  }

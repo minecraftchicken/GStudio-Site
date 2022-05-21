@@ -94,14 +94,64 @@
   transition: all 0.2s ease;
 }
 
+.qrcode-icon {
+  font-size: 1.4em;
+}
+
 #winner-text {
   font-size: small;
   font-weight: 400;
+}
+
+/* QR Code Animation */
+
+#reev_qr, #reevdark_qr, #dashcards_qr, #minimus_qr, #gradjent_qr {
+  position: fixed;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+#reev_qr.reev_qr_enabled, #reevdark_qr.reevdark_qr_enabled, #dashcards_qr.dashcards_qr_enabled, #minimus_qr.minimus_qr_enabled, #gradjent_qr.gradjent_qr_enabled {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+#reev_qr.reev_qr_enabled p, #reevdark_qr.reevdark_qr_enabled p, #dashcards_qr.dashcards_qr_enabled p, #minimus_qr.minimus_qr_enabled p, #gradjent_qr.gradjent_qr_enabled p {
+  margin: 0;
+  font-size: 0.9em;
+  color: rgba(252, 252, 252, 0.5);
+}
+
+#reev_qr.reev_qr_enabled h1, #reevdark_qr.reevdark_qr_enabled h1, #dashcards_qr.dashcards_qr_enabled h1, #minimus_qr.minimus_qr_enabled h1, #gradjent_qr.gradjent_qr_enabled h1 {
+  color: rgb(252, 252, 252);
+  font-size: 1.8em;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+#reev_qr.reev_qr_enabled img, #reevdark_qr.reevdark_qr_enabled img, #dashcards_qr.dashcards_qr_enabled img, #minimus_qr.minimus_qr_enabled img, #gradjent_qr.gradjent_qr_enabled img {
+  width: 16em;
 }
 
 @media screen and (max-width: 600px) {
   .button-fill-cta,
   .button-outline-cta {
     font-size: 12px;
+  }
+
+  .qrcode-button {
+    display: none;
   }
 }
