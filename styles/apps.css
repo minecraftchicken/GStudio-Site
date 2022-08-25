@@ -106,6 +106,7 @@
 /* QR Code Animation */
 
 #reev_qr, #reevdark_qr, #dashcards_qr, #minimus_qr, #gradjent_qr {
+  display: none;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
