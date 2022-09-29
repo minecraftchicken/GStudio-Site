@@ -88,15 +88,11 @@
     </header>
 
     <div id="announcement">
-
         <p id="announcement-title">
             <!-- Handled by content.js -->
         </p>
-        <a target="_blank" href="https://flurly.com/p/ReevWallpapers">
-            <p id="announcement-link">
-                <!-- Handled by content.js --> <i class="ph-arrow-right"></i>
-            </p>
-        </a>
+        <button id="announcement-link" onclick="announce_link()">
+        </button>
     </div>
 
     <main>
@@ -127,6 +123,32 @@
         </div>
 
         <div class="items-container">
+            <div class="item-type-compact">
+            <img class="item-image" src="images/apps/Catalyst.jpg" alt="">
+            <div class="app-type">
+                <p id="first-apptype"><a
+                        href="https://play.google.com/store/apps/details?id=catalyst.grabsterstudios"
+                        target="_blank">KLWP</a></p>
+                <p>Wallpapers</p>
+            </div>
+            <div class="item-title" id="kill-padding">
+                <h2 class="item-title-text">Catalyst</h2>
+            </div>
+            <h3 class="long-desc">The most accurate & feature rich iOS experience through KLWP!
+                Real-time blur, depth wallpaper, on-the-fly icon switching and so much more!
+            </h3>
+
+            <div class="buttons-container">
+                <a href="https://play.google.com/store/apps/details?id=catalyst.grabsterstudios"
+                    target="_blank"><button class="button-fill-cta">Download</button></a>
+
+                    <button onclick="catalyst_qr();" class="button-outline-cta qrcode-button"><i class="ph-qr-code qrcode-icon"></i></button>
+
+                <a href="https://www.youtube.com/watch?v=wKWx1hb8QV0" target="_blank"><button
+                        class="button-outline-cta">Trailer</button></a>
+            </div>
+        </div>
+
             <div class="item-type-compact">
                 <img class="item-image" src="images/apps/Gradjent.jpg" alt="">
                 <div class="app-type">
@@ -304,6 +326,12 @@
         
         <div onclick="minimus_qr();" id="minimus_qr">
             <img src="/images/qr_code_imgs/QR_minimus.png">
+            <h1>Scan QR to install</h1>
+            <p>Click anywhere to dismiss.</p>
+        </div>
+        
+        <div onclick="catalyst_qr();" id="catalyst_qr">
+            <img src="/images/qr_code_imgs/QR_Catalyst.png">
             <h1>Scan QR to install</h1>
             <p>Click anywhere to dismiss.</p>
         </div>

@@ -431,15 +431,23 @@ footer div {
 }
 
 #announcement-link {
+  background-color: var(--accent-color);
   color: rgb(248, 248, 248);
+  cursor: pointer;
   border: solid 2px;
-  padding: 4px 12px;
+  padding: 8px 14px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   margin: 0 12px;
   font-size: clamp(12px, 0.9vw, 100px);
   width: max-content;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#announcement-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease-in-out;
 }
 
 #announcement-link i {

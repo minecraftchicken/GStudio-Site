@@ -89,3 +89,10 @@ function minimus_qr() {
   var element = document.getElementById("minimus_qr");
   element.classList.toggle("minimus_qr_enabled");
 }
+
+  // Catalyst
+  function catalyst_qr() {
+    var element = document.getElementById("catalyst_qr");
+    element.classList.toggle("catalyst_qr_enabled");
+  }
+  
