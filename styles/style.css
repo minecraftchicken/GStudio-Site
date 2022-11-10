@@ -184,6 +184,7 @@ main,
 }
 
 .name {
+  font-size: 1.6em;
   margin-left: 0.5em;
 }
 
@@ -578,7 +579,7 @@ li:not(:last-child) {
     padding: 0 30px;
   }
   .name {
-    font-size: large;
+    font-size: 1.4em;;
   }
   .logo-svg {
     width: 30px;
