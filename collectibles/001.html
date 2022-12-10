@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <!-- Render -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Basic -->
+    <title>About — Grabster</title>
+    <link rel="shortcut icon" type="image/jpg" href="../images/logo.png" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css?cache_refresh" />
+    <link rel="stylesheet" href="../styles/projects.css?cache_refresh" />
+    <link rel="stylesheet" href="collectibles-style.css?cache_refresh" />
+    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- Javascript -->
+    <script src="../js/javascript.js"></script>
+    <!-- Mobile res -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta content="Reev Collectibles 001" property="og:title" />
+    <meta content="Extremely rare collectibles worth bragging rights." property="og:description" />
+    <meta content="https://grabster.tv/collectibles/001.html" property="og:url" />
+    <meta content="#fcfd78" data-react-helmet="true" name="theme-color" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="../images/logo-vector.svg" alt="Grabster Logo">
+                    <h2 class="name">Grabster</h2>
+                </div>
+            </a>
+
+            <div class="nav-container">
+                <ul class="nav-list">
+
+                    <div>
+                        <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
+                        <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav slides on scroll -->
+        <div class="slide-nav-container" id="navbar">
+
+            <a href="../index.html">
+                <div class="brand-container">
+                    <img class="logo-svg" src="../images/logo-vector.svg" alt="Grabster Logo">
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
+
+        <!-- THE CARD -->
+        <div class="card-container">
+            <img class="card" src="../images/reev_collectibles/Reev-Collectibles-001.png" alt="thing">
+            <p>Collected by EM4V</p>
+        </div>
+
+    </main>
+    <script>
+          // REEV COLLECTIBLES 3D Hover
+        const card = document.querySelector(".card");
+        const motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
+        const THRESHOLD = 15;
+
+        function handleHover(e) {
+        const { clientX, clientY, currentTarget } = e;
+        const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
+
+        const horizontal = (clientX - offsetLeft) / clientWidth;
+        const vertical = (clientY - offsetTop) / clientHeight;
+        const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+        const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+
+        card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+        }
+
+        function resetStyles(e) {
+        card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+        }
+
+        if (!motionMatchMedia.matches) {
+        card.addEventListener("mousemove", handleHover);
+        card.addEventListener("mouseleave", resetStyles);
+        }
+    </script>
+</body>
+
+</html>
