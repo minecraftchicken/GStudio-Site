@@ -24,6 +24,7 @@ html {
   --accent-color: 255, 103, 56;
   --image-invert: invert(0);
   --blend-mode-invert: lighten;
+  --video-contrast: 255, 255, 255, 0.65
 }
 
 html[data-theme="dark"] {
@@ -32,6 +33,7 @@ html[data-theme="dark"] {
   --color-secondary: 213, 213, 213;
   --image-invert: invert(1);
   --blend-mode-invert: multiply;
+  --video-contrast: 0, 0, 0, 0.3
 }
 
 .invertable {
@@ -420,7 +422,7 @@ footer div {
   height: fit-content;
   justify-content: center;
   align-items: center;
-  padding: 12px 16px;
+  padding: 10px 16px;
   margin-top: 12px;
 }
 
@@ -488,6 +490,7 @@ footer div {
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: 3rem;
 }
 #contact-main {
   height: 70%;
@@ -547,6 +550,7 @@ footer div {
 }
 
 .page-icon-white {
+  transition: all .3s ease;
   fill: rgb(var(--color-primary));
 }
 
@@ -571,6 +575,77 @@ ol li:before {
 li:not(:last-child) {
   margin-bottom: 6px;
 }
+
+/* Reev Chroma Landing Page */
+
+#background-video {
+  /* filter: brightness(85%); */
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+#bgvid-overlay {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(var(--video-contrast));
+  transition: all .3s ease;
+}
+
+#reev-chroma-caption {
+  margin-top: 0.6em;
+  color: rgb(var(--color-primary));
+}
+
+#reev-chroma-logo {
+  width: 34px;
+  height: 34px;
+  padding: 0 10px 0 0;
+}
+
+#badge-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.badge {
+  width: 10rem;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.badge:hover {
+  box-shadow: 0 12px 22px rgba(var(--accent-color),0.4), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.badge.grayed-out {
+  opacity: 0.4;
+  cursor: no-drop;
+}
+
+#footer-links {
+  display: flex;
+  gap: 2.2em;
+  justify-content: center;
+}
+
 
 /* --- Mobile --- */
 
@@ -700,10 +775,6 @@ li:not(:last-child) {
     margin: 35px 0;
   }
   /* Contact page */
-
-  #contact-container p {
-    font-size: 0.8em;
-  }
 }
 
 @media screen and (max-width: 600px) {

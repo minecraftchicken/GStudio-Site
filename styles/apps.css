@@ -4,6 +4,11 @@
   padding-top: 0;
 }
 
+.page-title {
+  display: flex;
+    align-items: center;
+}
+
 .long-desc {
   font-size: clamp(16px, 1vw, 80px);
   font-weight: 400;
