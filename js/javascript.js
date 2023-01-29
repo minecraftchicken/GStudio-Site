@@ -95,4 +95,3 @@ function minimus_qr() {
     var element = document.getElementById("catalyst_qr");
     element.classList.toggle("catalyst_qr_enabled");
   }
-  

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <!-- Render -->
@@ -22,12 +22,10 @@
     <script src="js/javascript.js"></script>
     <!-- Mobile res -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- <meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=com.reevchroma.grabsterstudios" />
-    <title>Loading...</title> -->
 </head>
 
-<body>
+<body class="dark-page">
+
     <header>
         <div class="header-container">
             <a href="index.html">
@@ -43,12 +41,12 @@
                     <li><a href="store.html">Store</a></li>
                     
 
-                    <li><span class="divider-line">|</span></li>
+                    <!-- <li><span class="divider-line">|</span></li> -->
 
-                    <div>
+                    <!-- <div>
                         <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
                         <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
-                    </div>
+                    </div> -->
 
                     <!-- Sidebar toggle button -->
                     <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
@@ -71,12 +69,12 @@
                     <li><a href="store.html">Store</a></li>
                     
 
-                    <li><span class="divider-line">|</span></li>
+                    <!-- <li><span class="divider-line">|</span></li> -->
 
-                    <div>
+                    <!-- <div>
                         <a><i onclick="toggleTheme('dark')" class="light-icon ph-moon-stars-fill"></i></a>
                         <a><i onclick="toggleTheme('light')" class="dark-icon ph-sun-fill"></i></a>
-                    </div>
+                    </div> -->
 
                     <!-- Sidebar toggle button -->
                     <i onclick="sideBar();backgroundDim()" class="ph-list" id="sidebar-button"></i>
@@ -85,11 +83,11 @@
         </div>
     </header>
 
-    <main id="contact-main">
+    <main id="contact-main" class="dark-page">
         <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
 
         <div class="page-title-container" id="contact-container">
-            <h1 class="page-title">
+            <h1 class="page-title dark-page">
 
                 <svg id="reev-chroma-logo" viewBox="0 0 201 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_345_8361)">
@@ -112,36 +110,18 @@
                     </svg>
                 Reev Chroma
             </h1>
-            <p id="reev-chroma-caption">The start of your colorful journey. Express yourself in beautiful hues!
+            <p id="reev-chroma-caption" class="dark-page">The start of your colorful journey. Express yourself with stunning hues!
             </p>
 
             <div id="badge-container">
                 <a href="#">
-                    <svg class="badge grayed-out" viewBox="0 0 282 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect y="3" width="282" height="84.25" fill="url(#pattern0)"/>
-                        <defs>
-                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_1344_176" transform="matrix(0.00176756 0 0 0.00591634 -0.070922 -0.243994)"/>
-                        </pattern>
-                        <image id="image0_1344_176" width="646" height="250" xlink:href="data:image/png;base64,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"/>
-                        </defs>
-                    </svg>
+                    <img class="badge grayed-out" src="/images/svg-icons/Play-badge.svg" alt="">
                 </a>
                     
                 <!-- <a href="#"> -->
-                    <svg class="badge" viewBox="0 0 282 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="2.71826" width="280" height="82" rx="13" fill="#C6E9E7" stroke="#7DD7D2" stroke-width="2"/>
-                        <circle cx="46.5" cy="44.5" r="19.5" fill="#37B0AA"/>
-                        <path d="M100.391 28.1387C99.0781 28.8535 97.6162 29.2109 96.0049 29.2109C94.1416 29.2109 92.6328 28.6309 91.4785 27.4707C90.3242 26.3105 89.7471 24.7754 89.7471 22.8652C89.7471 20.9141 90.377 19.3145 91.6367 18.0664C92.9023 16.8125 94.5078 16.1855 96.4531 16.1855C97.8535 16.1855 99.0312 16.3906 99.9863 16.8008V18.9541C99.0195 18.3096 97.8682 17.9873 96.5322 17.9873C95.1904 17.9873 94.0889 18.4297 93.2275 19.3145C92.3721 20.1992 91.9443 21.3447 91.9443 22.751C91.9443 24.1982 92.3135 25.3379 93.0518 26.1699C93.79 26.9961 94.792 27.4092 96.0576 27.4092C96.9248 27.4092 97.6748 27.2422 98.3076 26.9082V23.9111H95.6533V22.1533H100.391V28.1387ZM110.364 29H103.289V16.3965H110.083V18.1719H105.381V21.7402H109.714V23.5068H105.381V27.2334H110.364V29ZM120.962 18.1719H117.341V29H115.249V18.1719H111.637V16.3965H120.962V18.1719ZM130.275 29H128.121V16.3965H130.275V29ZM141.655 18.1719H138.034V29H135.942V18.1719H132.329V16.3965H141.655V18.1719ZM154.017 29.2109C152.201 29.2109 150.745 28.6221 149.649 27.4443C148.559 26.2666 148.014 24.7344 148.014 22.8477C148.014 20.8203 148.571 19.2031 149.684 17.9961C150.797 16.7891 152.309 16.1855 154.219 16.1855C155.989 16.1855 157.413 16.7715 158.491 17.9434C159.575 19.1152 160.117 20.6475 160.117 22.54C160.117 24.5967 159.563 26.2227 158.456 27.418C157.348 28.6133 155.869 29.2109 154.017 29.2109ZM154.114 18.0225C152.959 18.0225 152.019 18.4531 151.292 19.3145C150.572 20.1758 150.211 21.3096 150.211 22.7158C150.211 24.1162 150.563 25.2441 151.266 26.0996C151.969 26.9551 152.889 27.3828 154.026 27.3828C155.233 27.3828 156.185 26.9756 156.882 26.1611C157.58 25.3467 157.928 24.207 157.928 22.7422C157.928 21.2363 157.588 20.0732 156.909 19.2529C156.235 18.4326 155.303 18.0225 154.114 18.0225ZM173.298 29H171.013L164.993 19.7363C164.84 19.502 164.714 19.2588 164.615 19.0068H164.562C164.609 19.2764 164.632 19.8535 164.632 20.7383V29H162.611V16.3965H165.045L170.864 25.4404C171.11 25.8154 171.268 26.0732 171.338 26.2139H171.374C171.315 25.8799 171.286 25.3145 171.286 24.5176V16.3965H173.298V29Z" fill="#095A56"/>
-                        <path d="M107.395 45.4878H97.5117V52.3628H106.594V57.48H97.5117V68.3589H91.2031V40.3511H107.395V45.4878ZM129.01 68.3589H112.331V40.3511H118.639V63.2417H129.01V68.3589ZM155.119 56.23C155.119 64.6414 151.199 68.8472 143.361 68.8472C135.757 68.8472 131.954 64.7391 131.954 56.5229V40.3511H138.283V56.6011C138.283 61.1323 140.053 63.3979 143.595 63.3979C147.072 63.3979 148.81 61.2104 148.81 56.8354V40.3511H155.119V56.23ZM185.035 68.3589H177.789L173.434 61.1519C173.108 60.605 172.796 60.1167 172.496 59.687C172.197 59.2573 171.891 58.8927 171.578 58.5933C171.279 58.2808 170.96 58.0464 170.621 57.8901C170.296 57.7209 169.938 57.6362 169.547 57.6362H167.848V68.3589H161.539V40.3511H171.539C178.336 40.3511 181.734 42.8901 181.734 47.9683C181.734 48.9448 181.585 49.8498 181.285 50.6831C180.986 51.5034 180.563 52.2456 180.016 52.9097C179.469 53.5737 178.805 54.1466 178.024 54.6284C177.255 55.1102 176.396 55.4878 175.445 55.7612V55.8394C175.862 55.9696 176.266 56.1844 176.656 56.4839C177.047 56.7703 177.425 57.1089 177.789 57.4995C178.154 57.8901 178.499 58.3133 178.824 58.769C179.163 59.2118 179.469 59.6479 179.742 60.0776L185.035 68.3589ZM167.848 45.0776V52.8706H170.582C171.936 52.8706 173.024 52.48 173.844 51.6987C174.677 50.9045 175.094 49.9214 175.094 48.7495C175.094 46.3016 173.629 45.0776 170.699 45.0776H167.848ZM204.659 68.3589H187.979V40.3511H194.288V63.2417H204.659V68.3589ZM227.017 40.3511L217.896 58.3979V68.3589H211.587V58.5151L202.701 40.3511H209.908L214.419 50.8003C214.498 50.9956 214.712 51.7573 215.064 53.0854H215.142C215.311 52.1479 215.513 51.4123 215.748 50.8784L220.337 40.3511H227.017Z" fill="#095A56"/>
-                    </svg>
+                    <img class="badge" src="/images/svg-icons/flurly-badge-custom.svg" alt="">
                 <!-- </a>   -->
             </div>
-        </div>
-
-        <div id="footer-links">
-            <p id="contact-email"><a href="#">FAQs</a></p>
-            <p id="contact-email"><a href="contact.html">Contact</a></p>
         </div>
         <!-- Sidebar -->
 
@@ -168,6 +148,11 @@
         </div>
 
     </main>
+
+    <div id="footer-links" class="dark-page">
+        <p id="contact-email"><a href="info/faqs.html">FAQs</a></p>
+        <p id="contact-email"><a href="contact.html">Contact</a></p>
+    </div>
 
     <!-- <div id="background-dim"></div> -->
     <div>

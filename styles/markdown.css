@@ -30,7 +30,7 @@ main {
     align-items: center;
     align-content: center;
     margin-bottom: 12px;
-    transition: color 300ms ease 0.3s;
+    transition: color .2s ease 0.3s;
     justify-content: flex-end;
 }
 
@@ -47,23 +47,23 @@ main {
     padding: 4px 12px;
     border-radius: 4px;
     font-size: 0.9em;
-    transition: color 300ms;
+    transition: color .2s;
 }
 #tag-easy {
     background: rgb(var(--easy));
-    transition: color 300ms ease;
+    transition: color .2s ease;
 }
 #tag-medium {
     background: rgb(var(--medium));
-    transition: color 300ms ease;
+    transition: color .2s ease;
 }
 #tag-advanced {
     background: rgb(var(--advanced));
-    transition: color 300ms ease;
+    transition: color .2s ease;
 }
 #tag-type {
     background: rgb(var(--type));
-    transition: color 300ms ease;
+    transition: color .2s ease;
 }
 
 .subheading {
