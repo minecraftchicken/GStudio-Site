@@ -38,29 +38,37 @@ main {
     margin: 4px 0 0 .8em;
     font-weight: 500;
 }
-#tag-container span + span {
+
+#tag-container span+span {
     margin-left: 0.5em;
 }
 
-#tag-easy, #tag-medium, #tag-advanced, #tag-type {
+#tag-easy,
+#tag-medium,
+#tag-advanced,
+#tag-type {
     color: var(--tag-text-color);
     padding: 4px 12px;
     border-radius: 4px;
     font-size: 0.9em;
     transition: color .2s;
 }
+
 #tag-easy {
     background: rgb(var(--easy));
     transition: color .2s ease;
 }
+
 #tag-medium {
     background: rgb(var(--medium));
     transition: color .2s ease;
 }
+
 #tag-advanced {
     background: rgb(var(--advanced));
     transition: color .2s ease;
 }
+
 #tag-type {
     background: rgb(var(--type));
     transition: color .2s ease;
@@ -85,12 +93,15 @@ ol li {
     padding: 0 0.6em;
 }
 
-pre, code {
+pre,
+code {
     border-radius: 2px;
-    color: rgb(var(--accent-color));;
+    color: rgb(var(--accent-color));
+    ;
     background-color: rgba(var(--accent-color-bg), 0.15);
     padding: 3px;
 }
+
 pre {
     display: inline-block;
     margin: 4px;
@@ -99,50 +110,56 @@ pre {
 blockquote {
     color: rgba(var(--color-primary), 0.7);
     background: rgba(var(--accent-color-bg), 0.05);
-    border-left: 4px solid rgb(var(--accent-color));;
+    border-left: 4px solid rgb(var(--accent-color));
+    ;
     margin: 1.2em 16px;
     padding: 1em 12px;
     font-style: italic;
     border-radius: 2px;
-  }
+}
 
-  blockquote p {
+blockquote p {
     display: inline;
-  }
+}
 
-  .section-container {
+.section-container {
     display: flex;
     align-items: center;
     margin: 1.6em 0 0.6em 0;
-  }
+}
 
-  .section-title {
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      margin: 0;
-  }
+.section-title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0;
+}
 
-  .section-icon {
+.section-icon {
     float: left;
     width: 1.7em;
     padding-right: 0.6em;
     align-content: center;
-  }
+}
 
-  @media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
     main {
         margin: 0 0;
     }
+
     #title-container {
         flex-direction: column;
         align-items: flex-start;
     }
+
     #tag-container {
         margin: 0 0 16px 0;
     }
-    #tag-easy, #tag-medium, #tag-advanced, #tag-type {
+
+    #tag-easy,
+    #tag-medium,
+    #tag-advanced,
+    #tag-type {
         padding: 4px 18px;
     }
 }
-

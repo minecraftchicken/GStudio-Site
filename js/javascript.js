@@ -5,18 +5,18 @@ const htmlEl = document.getElementsByTagName('html')[0];
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
 if (currentTheme) {
-    htmlEl.dataset.theme = currentTheme;
+  htmlEl.dataset.theme = currentTheme;
 }
 
 // When the user changes the theme, save the new value on local storage
 const toggleTheme = (theme) => {
-    htmlEl.dataset.theme = theme;
-    localStorage.setItem('theme', theme);
+  htmlEl.dataset.theme = theme;
+  localStorage.setItem('theme', theme);
 }
 /* /// */
 
 // Header Scroll
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -55,43 +55,43 @@ function toastMessage() {
   x.className = "toast-shown";
 
   // After 3 seconds, remove the show class from DIV
-  setTimeout(function(){ x.className = x.className.replace("toast-shown", ""); }, 3000);
+  setTimeout(function () { x.className = x.className.replace("toast-shown", ""); }, 3000);
 }
 
 // QR IDS
 
-  // Reev Pro
+// Reev Pro
 function reev_qr() {
   var element = document.getElementById("reev_qr");
   element.classList.toggle("reev_qr_enabled");
 }
 
-  // Reev Dark
+// Reev Dark
 function reevdark_qr() {
   var element = document.getElementById("reevdark_qr");
   element.classList.toggle("reevdark_qr_enabled");
 }
 
-  // DashCards
+// DashCards
 function dashcards_qr() {
   var element = document.getElementById("dashcards_qr");
   element.classList.toggle("dashcards_qr_enabled");
 }
 
-  // Gradjent
+// Gradjent
 function gradjent_qr() {
   var element = document.getElementById("gradjent_qr");
   element.classList.toggle("gradjent_qr_enabled");
 }
 
-  // Minimus
+// Minimus
 function minimus_qr() {
   var element = document.getElementById("minimus_qr");
   element.classList.toggle("minimus_qr_enabled");
 }
 
-  // Catalyst
-  function catalyst_qr() {
-    var element = document.getElementById("catalyst_qr");
-    element.classList.toggle("catalyst_qr_enabled");
-  }
+// Catalyst
+function catalyst_qr() {
+  var element = document.getElementById("catalyst_qr");
+  element.classList.toggle("catalyst_qr_enabled");
+}
