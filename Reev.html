@@ -82,8 +82,13 @@
             </div>
         </div>
     </header>
+    
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
 
     <main id="contact-main" class="dark-page">
+
         <div onclick="sideBar();backgroundDim()" id="background-dim"></div>
 
         <div class="items">
@@ -220,22 +225,24 @@
         <div id="bgvid-overlay"></div>
     </div> 
 
-    <!-- <footer>
-        <p>Designed & coded with stress & love by Grabster.</p>
-        <div>
-            <a href="https://twitter.com/grabstertv" target="_blank">
-                <i class="mdi mdi-twitter social-icons twitter"></i>
-            </a>
+    <script>
+        // Video progress on page load
+        const video = document.querySelector("#background-video");
+        const progressBar = document.querySelector("#progressBar");
 
-            <a href="https://youtube.com/grabstertv" target="_blank">
-                <i class="mdi mdi-youtube social-icons youtube"></i>
-            </a>
+        video.addEventListener("progress", updateProgress);
+        video.addEventListener("loadedmetadata", hideProgressBar);
+        video.addEventListener("ended", hideProgressBar);
 
-            <a href="https://grabster.tv/Discord" target="_blank">
-                <i class="mdi mdi-discord social-icons discord"></i>
-            </a>
-        </div>
-    </footer> -->
+        function updateProgress() {
+        const percent = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = `${percent}%`;
+        }
+
+        function hideProgressBar() {
+        progressBar.style.display = "none";
+    }
+    </script>
 </body>
 
 </html>
