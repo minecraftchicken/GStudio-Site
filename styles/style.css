@@ -493,6 +493,8 @@ footer div {
   margin-top: 3rem;
 }
 #contact-main {
+  display: flex;
+  justify-content: center;
   height: 70%;
 }
 
@@ -504,6 +506,7 @@ footer div {
 
 #contact-buttons-container button {
   margin: 7px;
+  width: max-content;
 }
 
 #contact-container h1 {
@@ -576,7 +579,7 @@ li:not(:last-child) {
   margin-bottom: 6px;
 }
 
-/* Reev Chroma Landing Page */
+/* Reev Landing Page */
 
 #background-video {
   /* filter: brightness(85%); */
@@ -605,13 +608,27 @@ li:not(:last-child) {
   transition: all .2s ease;
 }
 
-#reev-chroma-caption {
-  margin-top: 0.6em;
+.item-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
-#reev-chroma-logo {
-  width: 34px;
-  height: 34px;
+.divider-line {
+  width: 1px;
+  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50vh;
+}
+
+.reev-caption {
+  margin: 0 auto 2em auto;
+}
+
+.reev-logos {
+  width: 1.24em;
   padding: 0 10px 0 0;
 }
 
@@ -622,24 +639,15 @@ li:not(:last-child) {
 }
 
 .badge {
-  width: 10rem;
+  width: 9rem;
   cursor: pointer;
-  border-radius: 10px;
   border: 2px solid rgba(var(--accent-color), 0);
-  transition: border 0.2s ease;
-}
-
-.badge:hover {
-  border: 2px solid rgba(var(--accent-color), 1);
   transition: border 0.2s ease;
 }
 
 .badge.grayed-out {
   opacity: 0.4;
   cursor: no-drop;
-}
-.badge.grayed-out:hover {
-  border: 2px solid rgba(var(--accent-color), 0);
 }
 
 #footer-links {
@@ -662,6 +670,14 @@ li:not(:last-child) {
 
 .dark-page {
   color: rgb(235, 235, 235) !important;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  align-items: center;
+  flex-direction: row;
 }
 
 
@@ -792,7 +808,10 @@ li:not(:last-child) {
     object-fit: cover;
     margin: 35px 0;
   }
-  /* Contact page */
+  /* Reev landing page */
+  .items {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -806,6 +825,12 @@ li:not(:last-child) {
     width: 100%;
     height: 220px;
     object-fit: cover;
+  }
+  #contact-buttons-container {
+    flex-direction: column;
+  }
+  #contact-buttons-container button {
+    width: 70vw;
   }
 }
 
