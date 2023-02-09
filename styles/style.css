@@ -581,7 +581,7 @@ li:not(:last-child) {
 
 /* Reev Landing Page */
 
-#background-video {
+#backgroundVideo {
   /* filter: brightness(85%); */
   width: 100vw;
   height: 100vh;
@@ -650,16 +650,20 @@ li:not(:last-child) {
   cursor: no-drop;
 }
 
-.progress-container {
+#progressBar {
   width: 100%;
   height: 3px;
   background-color: rgb(var(--accent-color));
+  position: relative;
 }
 
-.progress-bar {
-  height: 100%;
-  background-color: #4caf50;
+#progress {
   width: 0%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #footer-links {
