@@ -227,19 +227,20 @@
 
     <script>
        var backgroundVideo = document.getElementById("backgroundVideo");
-        var progressBar = document.getElementById("progressBar");
-        var progress = document.getElementById("progress");
+var progressBar = document.getElementById("progressBar");
+var progress = document.getElementById("progress");
 
-        backgroundVideo.addEventListener("progress", function() {
-        var percent = backgroundVideo.buffered.end(0) / backgroundVideo.duration * 100;
-        progress.style.width = percent + "%";
-        if (percent === 100) {
-            setTimeout(function() {
-            progressBar.style.opacity = 0;
-            }, 300);
-        }
-        });
-
+backgroundVideo.addEventListener("progress", function() {
+  if (backgroundVideo.buffered.length > 0) {
+    var percent = backgroundVideo.buffered.end(0) / backgroundVideo.duration * 100;
+    progress.style.width = percent + "%";
+    if (percent === 100) {
+      setTimeout(function() {
+        progressBar.style.opacity = 0;
+      }, 300);
+    }
+  }
+});
     </script>
 </body>
 
