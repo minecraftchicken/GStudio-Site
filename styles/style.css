@@ -12,7 +12,7 @@ button {
 }
 
 body {
-  height: 100vh;
+  height: auto;
 }
 
 /* Dark Mode */
@@ -628,7 +628,7 @@ li:not(:last-child) {
 }
 
 .reev-logos {
-  width: 1.24em;
+  width: 1.4em;
   padding: 0 10px 0 0;
 }
 
@@ -654,11 +654,10 @@ li:not(:last-child) {
   display: flex;
   justify-content: center;
   gap: 2.2em;
-  position: absolute;
-  bottom: 1em;
+  position: relative;
   left: 0;
   right: 0;
-  margin: auto;
+  bottom: 0;
   animation: page-load-items 700ms cubic-bezier(0.21, 0, 0.17, 1)
 }
 #footer-links a {
@@ -677,7 +676,7 @@ li:not(:last-child) {
   justify-content: center;
   gap: 4em;
   align-items: center;
-  flex-direction: row;
+  height: 80vh;
 }
 
 
@@ -808,10 +807,6 @@ li:not(:last-child) {
     object-fit: cover;
     margin: 35px 0;
   }
-  /* Reev landing page */
-  .items {
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -831,6 +826,16 @@ li:not(:last-child) {
   }
   #contact-buttons-container button {
     width: 70vw;
+  }
+  /* Reev landing page */
+  .items {
+    flex-direction: column;
+    height: auto;
+    gap: 2.6em;
+  }
+  .divider-line {
+    height: 1px;
+    width: 30vw;
   }
 }
 
