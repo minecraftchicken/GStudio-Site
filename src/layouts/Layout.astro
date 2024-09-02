@@ -1,0 +1,369 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import AnnouncementBanner from '../components/Announcement_Banner.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<header>
+		<img id="logo" src="/public/logo.svg" alt="Grabster Studios Logo">
+		<span></span>
+		<!-- Categories -->
+		 <div class="links-container">
+			<a href="" class="link">
+				<p>Themes</p>
+			</a>
+			<a href="" class="link">
+				<p>Wallpapers</p>
+			</a>
+			<a href="" class="link">
+				<p>Icons</p>
+			</a>
+<!-- 
+			<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+				<defs>
+				  <style>
+					.cls-1 {
+					  fill: none;
+					}
+				  </style>
+				</defs>
+				<title>menu</title>
+				<rect x="4" y="6" width="24" height="2" /> 
+				<rect x="4" y="24" width="24" height="2"/> 
+				<rect x="4" y="12" width="24" height="2"/> 
+				<rect x="4" y="18" width="24" height="2" /> 
+				<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32" />
+			  </svg> -->
+	</header>
+
+	<!-- <AnnouncementBanner>
+	 </AnnouncementBanner> -->
+
+	<body>
+		<slot />
+	</body>
+	
+</html>
+<style is:global>
+	:root {
+		/* Background */
+		--background: #ffffff;
+		--background-inverse:#393939;
+		--background-inverse-hover: #474747;
+		--background-active: #C6C6C6;
+		--background-hover: #F1F1F1;
+		--background-selected: #E8E8E8;
+		--accent: #ED522C;
+		--accent-secondary: #F17556;
+
+		/* Text */
+		--text-primary: #161616;
+		--text-secondary: #525252;
+		--text-placeholder: #A8A8A8;
+		--text-on-color: #FFFFFF;
+		--text-helper: #6F6F6F;
+		--text-error: #DA1E28;
+		--text-inverse: #FFFFFF;
+		--text-disabled: #C5C5C5;
+		--text-on-color-disabled: #8D8D8D;
+
+		/* Buttons */
+			/* Primary */
+		--button-primary: #ED522C;
+		--button-primary-hover: #BE4223;
+		--button-primary-active: #8E311A;
+			/* Secondary */
+		--button-secondary: #393939;
+		--button-secondary-hover: #474747;
+		--button-secondary-active: #6F6F6F;
+			/* Tertiary */
+		--button-tertiary: #ED522C;
+		--button-tertiary-hover: #BE4223;
+		--button-tertiary-active: #8E311A;
+			/* Dangers */
+		--button-danger-primary: #DA1E28;
+		--button-danger-secondary: #da1e28;
+		--button-danger-active: #750E13;
+		--button-danger-hover: #B81922;
+			/* Other */
+		--button-separator: #e0e0e0;
+		--button-border: #e5e5e5;
+		--button-disabled: #c6c6c6;
+	}
+
+	/* –––  PAGE STYLING  ––– */
+
+	body {
+		margin: 0;
+		color: var(--text-primary);
+	}
+	main {
+		padding: 10px 40px; /* Main content padding */
+	}
+	a {
+		all: unset;
+		cursor: pointer;
+	}
+	a:hover {
+		color: var(--accent-secondary);
+	}
+
+	html {
+		
+		background: var(--background);
+		font-family: 'Overused Grotesk', sans-serif;
+	}
+
+	h1 {
+		font-family: 'Nohemi', sans-serif;
+	}
+
+	/* Header */
+	header {
+		background-color: var(--background-inverse);
+		z-index: 900;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		height: 50px;
+		width: 100vw;
+	}
+
+	header #logo {
+		height: 50%;
+	}
+	#hamburger {
+		fill: var(--text-inverse);
+		height: 50%;
+	}
+	header .links-container {
+		display: flex;
+		color: var(--text-inverse);
+		font-size: .9em;
+		opacity: 80%;
+	}
+	header .link {
+		padding: 0 1em;
+	}
+	header .link:hover {
+		color: unset;
+		background-color: var(--background-inverse-hover);
+	}
+	header span {
+		height: 40%;
+		width: 1px;
+		background: var(--text-secondary);
+		margin: 0 .6em 0 1.4em;
+	}
+
+	/* –––   FONTS   ––– */
+
+	/* Overused Grotesk */
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Black.woff') format('woff');
+		font-weight: 900; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-BlackItalic.woff') format('woff');
+		font-weight: 900; 
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Bold.woff') format('woff');
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-BoldItalic.woff') format('woff');
+		font-weight: bold;
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Book.woff') format('woff');
+		font-weight: normal; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-BookItalic.woff') format('woff');
+		font-weight: normal;
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-ExtraBold.woff') format('woff');
+		font-weight: 800; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-ExtraBoldItalic.woff') format('woff');
+		font-weight: 800; 
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Italic.woff') format('woff');
+		font-weight: normal; 
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Light.woff') format('woff');
+		font-weight: 300; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-LightItalic.woff') format('woff');
+		font-weight: 300;
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Medium.woff') format('woff');
+		font-weight: 500; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-MediumItalic.woff') format('woff');
+		font-weight: 500; 
+		font-style: italic;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-Roman.woff') format('woff');
+		font-weight: normal; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-SemiBold.woff') format('woff');
+		font-weight: 600; 
+		font-style: normal;
+		font-display: swap;
+		}
+
+		@font-face {
+		font-family: 'Overused Grotesk';
+		src: url('/fonts/OverusedGrotesk-SemiBoldItalic.woff') format('woff');
+		font-weight: 600; 
+		font-style: italic;
+		font-display: swap;
+		}
+		/* Nohemi */
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Black.woff2') format('woff2');
+		font-weight: 900; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Bold.woff2') format('woff2');
+		font-weight: 700; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-ExtraBold.woff2') format('woff2');
+		font-weight: 800; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-ExtraLight.woff2') format('woff2');
+		font-weight: 200; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Light.woff2') format('woff2');
+		font-weight: 300; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Medium.woff2') format('woff2');
+		font-weight: 500; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Regular.woff2') format('woff2');
+		font-weight: 400; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-SemiBold.woff2') format('woff2');
+		font-weight: 600; 
+		font-style: normal;
+		font-display: swap;
+		}
+		@font-face {
+		font-family: 'Nohemi';
+		src: url('/fonts/Nohemi-Thin.woff2') format('woff2');
+		font-weight: 100; 
+		font-style: normal;
+		font-display: swap;
+		}
+</style>
+                

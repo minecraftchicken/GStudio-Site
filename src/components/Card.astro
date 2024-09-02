@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+    icons: 'mobile' | 'screen' | 'watch'; // Define allowed icon values
+}
+
+const { href, title, body, icons } = Astro.props;
+---
+
+<a href={href}>
+<div class="link-card">
+	<img id="icon" src={`/src/assets/icons/${icons}.svg`}  alt="">
+		<div class="title-container">
+			<h3>{title}</h3>
+			<img src="/public/icons/arrow-right.svg" alt="">	  
+		</div>
+</div>
+</a>
+
+<style>
+	.link-card {
+		display: flex;
+		flex-direction: row;
+		flex: 1 0 auto;
+		align-items: center;
+		align-content: center;
+		
+		border: 1px solid var(--button-border);
+		position: relative;
+		width: auto;
+		height: 10rem;
+		transition: all .1s;
+	}
+	.link-card:hover {
+		background-color: var(--button-border);
+		transition: all .1s;
+	}
+
+	.title-container {
+		position: absolute;
+		bottom: 12px;
+		left: 16px;
+		width: 100%;
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+		.title-container img {
+			width: 24px;
+			padding-right: 30px;
+		}
+
+	.link-card #icon {
+		/* fill: var(--accent); */
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	a {
+		all: unset;
+		cursor: pointer;
+	}
+
+	h3 {
+		margin: 0;
+		font-weight: 400;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.link-card {
+			width: auto;
+			max-width: none;
+			margin: 0 auto 1em;
+		}
+	}
+</style>
