@@ -2,29 +2,39 @@
     <div class="footer-container">
         <div class="footer-branding">
             <img id="logo" src="/public/logo.svg" alt="Grabster Studios Logo">
+            <span></span>
             <h1>Grabster Studios</h1>
+
         </div>
+
             <div class="footer-links-container">
+
                 <ul>
+                    <a href="#">
+                    <li>Privacy Policy
+                    </li></a>
+                    
+                    <a href="#">
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        Refund Policy
                     </li>
+                    </a>
+
+                    <a href="#">
                     <li>
-                        <a href="#">Refund Policy</a>
+                        Terms & Conditions
                     </li>
+                    </a>
+
+                    <a href="#">
                     <li>
-                        <a href="#">Terms & Conditions</a>
+                        Contact
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                    </a>
                 </ul>
-                <!-- <ul>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                </ul> -->
+
             </div>
+            
         </div>
 </footer>
 
@@ -39,6 +49,8 @@
         footer #logo {
             width: 40px;
         }
+    footer a:hover {
+    }
     .footer-container {
 		display: flex;
         align-items: /* flex-start */ center;
@@ -46,26 +58,34 @@
         justify-content: space-between;
         padding: 0 2em;
     }
-    .footer-links-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-        gap: 1em;
-    }
     
     .footer-branding {
+        width: 100%;
         flex-wrap: wrap;
         display: flex;
         align-items: center;
         gap: 1em;
         height: fit-content;
     }
+        .footer-branding span {
+            background-color: var(--border-inverse);
+            height: 1.4em;
+            width: 1px;
+        }
         .footer-branding h1 {
             font-weight: 400;
-            font-size: 1.8em;
+            font-size: 1.6em;
             margin: 6px 0 0 0;
         }
+
+    .footer-links-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        gap: 1em;
+        width: 100%;
+    }
 
     footer ul {
         text-decoration: none;
@@ -75,4 +95,39 @@
         gap: 2em;
         margin: 0;
     }
+
+@media only screen and (max-width: 900px) {
+    .footer-container {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.6em;
+        padding: 0;
+    }
+
+    .footer-branding {
+        flex-wrap: nowrap;
+        padding: 0 1em;
+        width: fit-content;
+    }
+
+    .footer-links-container {
+        align-items: flex-start;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 0em;
+        width: 100%;
+    } 
+        footer li {
+            padding: 1em 0 1em 1em;
+            border-bottom: 1px solid var(--border-inverse);
+        }
+            footer ul:first-child {
+                border-top: 1px solid var(--border-inverse);
+            }
+    footer li:hover {
+        background-color: var(--background-inverse-hover);
+    }
+}
 </style>
