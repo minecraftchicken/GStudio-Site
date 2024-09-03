@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import AnnouncementBanner from '../components/Announcement_Banner.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -55,6 +56,8 @@ import AnnouncementBanner from '../components/Announcement_Banner.astro';
 	<body>
 		<slot />
 	</body>
+
+	<Footer/>
 	
 </html>
 <style is:global>
@@ -141,7 +144,7 @@ import AnnouncementBanner from '../components/Announcement_Banner.astro';
 		align-items: center;
 		align-content: center;
 		height: 50px;
-		width: 100vw;
+		width: 100%;
 	}
 
 	header #logo {
