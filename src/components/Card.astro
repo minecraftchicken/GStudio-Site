@@ -2,82 +2,117 @@
 import Layout from '../layouts/Layout.astro';
 
 interface Props {
-	title: string;
-	body: string;
-	href: string;
-    icons: 'mobile' | 'screen' | 'watch'; // Define allowed icon values
+    title: string;
+    body: string;
+    href: string;
+    type: 'KLWP' | 'KWGT' | 'KWCH'; // Define allowed icon values
+    cover_image: string;
 }
 
-const { href, title, body, icons } = Astro.props;
+const { href, title, body, type, cover_image} = Astro.props;
 ---
 
 <a href={href}>
 <div class="link-card">
-	<img id="icon" src={`/src/assets/icons/${icons}.svg`}  alt="">
-		<div class="title-container">
-			<h3>{title}</h3>
-			<img src="/public/icons/arrow-right.svg" alt="">	  
+    <div class="cover-image-container"> 
+        <div class="cover_image" style={`--cover-image: url('/src/assets/images/${cover_image}')`}></div>
+    </div>
+    <div class="title-container"> 
+		<div>
+			<h2>{title}</h2>
+			<p>{body}</p>
 		</div>
+        <img id="icon" src={`/src/assets/icons/${type}.svg`}  alt="">
+    </div> 
 </div>
 </a>
 
 <style>
-	.link-card {
-		display: flex;
-		flex-direction: row;
-		flex: 1 0 auto;
-		align-items: center;
-		align-content: center;
-		
-		border: 1px solid var(--button-border);
-		position: relative;
-		width: auto;
-		height: 10rem;
-		transition: all .1s;
-	}
-	.link-card:hover {
-		background-color: var(--button-border);
-		transition: all .1s;
+    .link-card {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        /* border: 1px solid var(--border-subtle-00); */
+		background-color: var(--layer-01);
+        width: auto;
+        /* min-height: 20rem;  Optional: Set a minimum height if needed */
+        transition: all .1s;
+        align-items: flex-start;
+		height: 100%;
+		/* height: 100%; */
+    }
+
+    .link-card:hover {
+        background-color: var(--layer-hover-01);
+        transition: all .1s;
+    }
+
+    .cover-image-container { 
+        width: 100%;
+        padding-top: 100%; 
+        position: relative;
+        overflow: hidden; 
+    }
+
+    .cover_image {
+        background-image: var(--cover-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 0 auto; 
+		flex-grow: 1;
+        padding: 1rem; /* Add padding for better spacing */
+    }
+	.title-container p {
+		margin-top: .6em;
 	}
 
-	.title-container {
-		position: absolute;
-		bottom: 12px;
-		left: 16px;
-		width: 100%;
-		
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-		.title-container img {
-			width: 24px;
-			padding-right: 30px;
-		}
+    .title-container img {
+        width: 24px;
+    }
 
-	.link-card #icon {
-		/* fill: var(--accent); */
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-	}
-	a {
-		all: unset;
-		cursor: pointer;
-	}
+    .link-card #icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 0.5rem; /* Add some margin to separate the icon */
+    }
 
-	h3 {
-		margin: 0;
-		font-weight: 400;
-	}
+    a {
+        all: unset;
+        cursor: pointer;
+    }
 
-	@media only screen and (max-width: 600px) {
-		.link-card {
-			width: auto;
-			max-width: none;
-			margin: 0 auto 1em;
-		}
-	}
+    h2 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 768px) { 
+        .link-card {
+            width: 100%; 
+			height: 100%; /* Or adjust to your desired height */
+        }
+
+        .cover-image-container {
+            width: 100%; 
+        }
+
+        .title-container {
+            width: 100%; 
+            padding-left: 1rem; 
+        }
+    }
+
 </style>

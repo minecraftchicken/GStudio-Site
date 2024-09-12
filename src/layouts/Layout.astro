@@ -12,26 +12,31 @@ import Footer from '../components/Footer.astro';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<!-- <meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" /> -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<header>
-		<img id="logo" src="/public/logo.svg" alt="Grabster Studios Logo">
+		<a href="/" id="header-logo">
+			<img src="/public/logo.svg" alt="Grabster Studios Logo">
+		</a>
 		<span></span>
 		<!-- Categories -->
 		 <div class="links-container">
-			<a href="" class="link">
-				<p>Themes</p>
-			</a>
-			<a href="" class="link">
-				<p>Wallpapers</p>
-			</a>
-			<a href="" class="link">
-				<p>Icons</p>
-			</a>
+			<a href="themes" class="link" data-astro-active={Astro.url.pathname === '/themes'}>
+                <p>Themes</p>
+            </a>
+            <a href="wallpapers" class="link" data-astro-active={Astro.url.pathname === '/wallpapers'}>
+                <p>Wallpapers</p>
+            </a>
+            <a href="icons" class="link" data-astro-active={Astro.url.pathname === '/icons'}>
+                <p>Icons</p>
+            </a>
+            <a href="widgets" class="link" data-astro-active={Astro.url.pathname === '/widgets'}>
+                <p>Widgets</p>
+            </a>
 <!-- 
 			<svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
 				<defs>
@@ -54,7 +59,9 @@ import Footer from '../components/Footer.astro';
 	 </AnnouncementBanner> -->
 
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 
 	<Footer/>
@@ -72,9 +79,56 @@ import Footer from '../components/Footer.astro';
 		--accent: #ED522C;
 		--accent-secondary: #F17556;
 
+		/* Layers */
+		/* Background color for layers on top of --background */
+		--layer-01: #F4F4F4;  
+		/* Colors on --layer-01 */
+		--layer-hover-01: #E8E8E8;
+		--layer-active-01: #C6C6C6;
+		--layer-selected-01: #E0E0E0;
+
+		/* Background color for layers on top of --layer-01 */
+		--layer-02: #FFFFFF; 
+		/* Colors on --layer-02 */
+		--layer-hover-02: #E8E8E8;
+		--layer-active-02: #C6C6C6;
+		--layer-selected-02: #E0E0E0;
+
+		/* Background color for layers on top of --layer-02 */
+		--layer-03: #F4F4F4; 
+		/* Colors on --layer-03 */
+		--layer-hover-03: #E8E8E8;
+		--layer-active-03: #C6C6C6;
+		--layer-selected-03: #E0E0E0;
+
+		--layer-disabled: #8D8D8D;
+
 		/* Borders */
-		--border: #e0e0e0;
+		/* Subtle border color on --background */
+		--border-subtle-00: #E0E0E0;
+
+		/* Subtle border color on --layer-01 */
+		--border-subtle-01: #C6C6C6;		
+		/* Subtle border color on --layer-02 */
+		--border-subtle-02: #E0E0E0;
+		/* Subtle border color on --layer-03 */
+		--border-subtle-03: #C6C6C6;
+
+		/* Selected state color for --border-subtle-XX */
+		--border-subtile-selected: #C6C6C6;
+
+		/* 3:1 AA color contrast border on all */
+		--border-strong: #8D8D8D;
+
+		/* 4.5:1 AA color contrast border on all layers.
+		Highest contrast border. */
 		--border-inverse: #525252;
+
+		/* Interactive or selected border color */
+		--border-interactive: #ED522C;
+		--border-disabled: #C6C6C6;
+
+		--border: #e0e0e0;
 
 		/* Text */
 		--text-primary: #161616;
@@ -116,14 +170,17 @@ import Footer from '../components/Footer.astro';
 	body {
 		margin: 0;
 		color: var(--text-primary);
+		max-height: 100vw;
 	}
 	main {
 		padding: 10px 40px; /* Main content padding */
+		min-height: 100vh;
 	}
 	a {
 		all: unset;
 		cursor: pointer;
 		transition: all .1s;
+		border-bottom: 1px solid var(--accent);
 	}
 	a:hover {
 		color: var(--accent-secondary);
@@ -152,21 +209,30 @@ import Footer from '../components/Footer.astro';
 		align-items: center;
 		align-content: center;
 	}
-
-	header #logo {
-		height: 50%;
+	header a {
+		border-bottom: none;
 	}
+
+	#header-logo {
+		height: 100%;
+    align-content: center;
+	}
+		#header-logo img {
+			height: 50%;
+			padding-top: 2px;
+		}
+
 	#hamburger {
 		fill: var(--text-inverse);
 		height: 50%;
 	}
 	header .links-container {
 		font-size: .9em;
-		opacity: 80%;
 		display: flex;
 		color: var(--text-inverse);
+		align-items: center;
 	}
-	header .link {
+	header .link { 
 		padding: 0 1em;
 	}
 	header .link:hover {
@@ -178,6 +244,25 @@ import Footer from '../components/Footer.astro';
 		width: 1px;
 		margin: 0 .6em 0 1.4em;
 		background: var(--text-secondary);
+	}
+	/* Apply the accent border only when data-astro-active is true */
+    header .link[data-astro-active] {
+		border-bottom: 2px solid var(--accent);
+
+	}
+
+	/* –––   MARKDOWN   ––– */
+	blockquote {
+		width: fit-content;
+		padding: 0.1em 1.4em;
+		margin: 0;
+		background-color: var(--background-selected);
+		border-left: 4px solid var(--accent-secondary);
+	}
+
+	/* –––   BUTTONS   ––– */
+	.button-primary {
+		background: none;
 	}
 
 	/* –––   FONTS   ––– */

@@ -5,10 +5,12 @@ import Card_Tall from "../components/Card_Tall.astro";
 ---
 
 <Layout title="Grabster">
-  <main>
-    <p class="landing-title">Your digital home. <span>Your way.</span></p>
+  <div class="hero-container">
+    <button class="button-primary">something here</button>
+  </div>
+  <p class="landing-title">Your digital home. <span>Your way.</span></p>
 
-    <ul>
+  <!-- <ul>
       <Card
         href="#"
         title="Wallpapers"
@@ -35,37 +37,95 @@ import Card_Tall from "../components/Card_Tall.astro";
       />
     </ul>
     <br />
-    <p class="section-title">The latest and greatest.</p>
-	<ul>
-		<Card_Tall
-			href="https://play.google.com/store/apps/details?id=com.reevchroma.grabsterstudios"
-			cover_image="Icon-Pack-Banner"
-			title="Reev Chroma"
-			body="Express yourself."
+    <p class="section-title">The latest and greatest.</p> -->
+  <ul>
+    <Card_Tall
+      href="https://play.google.com/store/apps/details?id=com.reevchroma.grabsterstudios"
+      cover_image="Icon-Pack-Banner"
+      title="Reev Chroma"
+      body="Express yourself with stunning hues."
       contrast="black"
-		/>
-		<Card_Tall
-			href="https://play.google.com/store/apps/details?id=catalyst.grabsterstudios&hl=en&gl=US"
-			cover_image="Catalyst-Banner"
-			title="Catalyst"
-			body="iOS on Android has never looked this good."
+    />
+    <Card_Tall
+      href="https://play.google.com/store/apps/details?id=catalyst.grabsterstudios&hl=en&gl=US"
+      cover_image="Catalyst-Banner"
+      title="Catalyst"
+      body="iOS on Android has never looked this good."
       contrast="white"
-		/>
-		<Card_Tall
-			href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios"
-			cover_image="Reev-Pro-Banner"
-			title="Reev Pro"
-			body="Icons for every occasion."
+    />
+    <Card_Tall
+      href="https://play.google.com/store/apps/details?id=com.reevpro.grabsterstudios"
+      cover_image="Reev-Pro-Banner"
+      title="Reev Pro"
+      body="Icons for every occasion."
       contrast="black"
-		/>
-	</ul>
-  </main>
+    />
+    <Card_Tall
+      href="https://play.google.com/store/apps/details?id=com.reevdark.grabsterstudios"
+      cover_image="Reev-Dark-Banner"
+      title="Reev Dark"
+      body="The love light mode deserves"
+      contrast="white"
+    />
+  </ul>
+
+  <!-- <p class="section-title">Theme to your <span>heart's desire.</span></p>
+  <ul>
+    <Card
+      title="Catalyst"
+      body="The perfect iOS clone for Android made with KLWP with tons of customization."
+      href=""
+      type="KLWP"
+      cover_image="themes/Card-catalyst.png"
+    />
+    <Card
+      title="Catalyst"
+      body="The perfect iOS clone for Android made with KLWP with tons of customization."
+      href=""
+      type="KLWP"
+      cover_image="themes/Card-catalyst.png"
+    />
+    <Card
+      title="Catalyst"
+      body="The perfect iOS clone for Android made with KLWP with tons of customization."
+      href=""
+      type="KLWP"
+      cover_image="themes/Card-catalyst.png"
+    />
+    <Card
+      title="Catalyst"
+      body="The perfect iOS clone for Android made with KLWP with tons of customization."
+      href=""
+      type="KLWP"
+      cover_image="themes/Card-catalyst.png"
+    />
+    <Card
+      title="Catalyst"
+      body="The perfect iOS clone for Android made with KLWP with tons of customization."
+      href=""
+      type="KLWP"
+      cover_image="themes/Card-catalyst.png"
+    />
+  </ul> -->
 </Layout>
 
 <style>
+  .hero-container {
+    background-image: url(../assets/images/themes/Card-Dashcards.png);
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vw;
+  }
+  .hero-container button {
+
+  }
+
+
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 100%;
 
     gap: 1em;
@@ -83,11 +143,11 @@ import Card_Tall from "../components/Card_Tall.astro";
   .section-title {
     font-size: 1.6em;
     font-weight: 500;
+    padding-top: .6em;
   }
   .section-title span {
-    color: var(--accent-secondary);
+    color: var(--accent);
   }
-
   /* Mobile */
   @media only screen and (max-width: 600px) {
     ul {
